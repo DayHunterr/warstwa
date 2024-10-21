@@ -1,5 +1,4 @@
-<!--section header???-->
-<html lang="pl" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,9 @@
     <link rel="stylesheet" href="styles/global.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -708,10 +708,10 @@
             <div class="form-container">
                 <p class="highlight">Twoja firma istnieje co najmniej 5 lat na rynku? <strong>Możesz dołączyć do
                     projektu!</strong></p>
-                <form action="/submit" method="post">
-                    <input type="text" name="company_name" placeholder="Nazwa firmy" required>
-                    <input type="tel" name="phone_number" placeholder="Numer telefonu" required>
-                    <button type="submit">Wyślij</button>
+                <form action="/submit" method="post" class="contact-us__form">
+                    <input type="text" name="company_name" class="contact-us__form-input" placeholder="Nazwa firmy">
+                    <input type="tel" name="phone_number" class="contact-us__form-input" placeholder="Numer telefonu">
+                    <button type="submit" class="contact-us__form-submit">Wyślij</button>
                 </form>
                 <div class="security-info">
                     <img src="img/security.png" alt="Security Icon">
