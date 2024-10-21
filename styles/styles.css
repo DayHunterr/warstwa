@@ -33,7 +33,7 @@ body {
 
 
 .main__sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 7%;
@@ -1208,7 +1208,7 @@ picture {
         background: none;
         position: absolute;
         height: auto;
-        gap: 160vw;
+        gap: 150vw;
     }
     .main__sidebar-top,.main__sidebar-bottom{
         max-height: 100%;
