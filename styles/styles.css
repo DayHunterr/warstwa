@@ -260,7 +260,8 @@ hr {
 }
 
 .benefits__item-logo {
-    height: 203px;
+    height: auto;
+    width: 100%;
 }
 
 .benefits__items-description {
@@ -1154,6 +1155,39 @@ form button:hover {
 
 picture {
     width: 100%;
+}
+
+@media (max-width: 1396px) {
+
+    .recognition__columns{
+        margin-bottom: 15%;
+    }
+}
+
+@media (max-width:1009px ) {
+    .recognition__columns{
+        margin-bottom: 25%;
+    }
+}
+
+@media (max-width: 1590px) {
+    .benefits__list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .benefits__list-item{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .benefits__items-description{
+        margin-top: 5%;
+    }
+    
 }
 
 
