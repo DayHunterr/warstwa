@@ -482,7 +482,7 @@ hr {
     justify-content: center;
     align-content: center;
     display: flex;
-    width: 160px;
+    width: 17%;
 }
 
 .company-logo img {
@@ -1164,7 +1164,7 @@ picture {
     }
 }
 
-@media (max-width:1009px ) {
+@media (max-width:1009px) {
     .recognition__columns{
         margin-bottom: 25%;
     }
@@ -1461,7 +1461,7 @@ picture {
 
     .company-logo {
         justify-content: center;
-        width: 60px;
+        width: 20%;
     }
 
     .company-action {
