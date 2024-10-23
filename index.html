@@ -13,41 +13,73 @@
 </head>
 <body>
 
+<div class="main__sidebar">
+    <div class="main__sidebar-top">
+        <div class="main__top-icon">
+            <img src="img/meritus_mercatum_main_hu.png" alt="Menu Icon">
+        </div>
+        <div class="main__top-line-container">
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="main__sidebar-bottom">
+        <nav class="main__bottom-text">
+            <span><strong>Zgłoś się</strong> </span>
+            <span>do projektu</span>
+        </nav>
+    </div>
+</div>
+
 <section class="main">
-    <div class="main__container">
-        <div class="main__sidebar">
-            <div class="main__sidebar-top">
-                <div class="main__top-icon">
-                    <img src="img/meritus_mercatum_main_hu.png" alt="Menu Icon">
+    <div class="nav_mobile">
+        <div class="nav_mobile__logo">
+            <a href="#" class="nav_mobile__logo-link">
+                <img src="img/logo_ro.svg" alt="Logo">
+            </a>
+        </div>
+        <div id="mob_menu">
+            <input id="menu__toggle" type="checkbox" data-nav-target="mobMenuTrigger">
+            <label class="menu__btn" for="menu__toggle" data-action="click->nav#onShowMobileMenu">
+                <span></span>
+            </label>
+            <div id="mob-items">
+                <div class="mob-nav-item">
+                    <a href="#">Balíček materiálov</a>
                 </div>
-                <div class="main__top-line-container">
-                    <div class="line-main"></div>
-                    <div class="line-main"></div>
-                    <div class="line-main"></div>
-                    <div class="line-main"></div>
+                <div class="mob-nav-item">
+                    <a href="#">Wartości</a>
                 </div>
-            </div>
-            <hr>
-            <div class="main__sidebar-bottom">
-                <nav class="main__bottom-text">
-                    <span><strong>Zgłoś się</strong> </span>
-                    <span>do projektu</span>
-                </nav>
+                <div class="mob-nav-item">
+                    <a href="#">Lista wyróżnionych</a>
+                </div>
+                <div class="mob-nav-item">
+                    <a href="#">Materiały</a>
+                </div>
+                <div class="mob-nav-item">
+                    <a href="#">Regulamin</a>
+                </div>
+                <div class="mob-nav-btn">
+                    <a href="#">zgłoś sIę</a>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="main__container">
         <div class="main__hero">
             <div class="hero__content">
                 <div class="hero__content-image">
-                    <picture>
-                        <source media="(max-width:767px)" srcset="img/meritus_mercatum_main-custom-mobile.png">
-                        <img class="main-img" src="img/meritus_mercatum_main-custom.png" alt="main-icon">
-                    </picture>
+                    <img class="main-img" src="img/meritus_mercatum_main-custom.svg" alt="main-icon">
                 </div>
                 <div class="hero__content-text">
                     <span class="font-400">ZASŁUŻENI</span>
                     <span class="font-700">DLA GOSPODARKI</span>
                 </div>
             </div>
+
             <div class="hero__content-bottom-menu">
                 <div class="bottom-menu__container-items">
                     <div class="bottom-menu__container-item">
@@ -74,15 +106,23 @@
             </div>
         </div>
     </div>
+    <div class="main__signup-button">
+        ZGŁoś SIę
+    </div>
 </section>
+
+
+
+
+
+
 <section class="benefits">
-    <h2 class="benefits__title">O WYROŻNIENIU</h2>
+    <h2 class="section-title benefits__title">O WYROŻNIENIU</h2>
     <div class="benefits__list">
         <div class="benefits__list-item">
-            <picture>
-                <source media="(max-width:767px)" srcset="img/benefits2-mobile.png">
-                <img class="benefits__item-logo" src="img/benefits2.png" alt="Participants">
-            </picture>
+            <div class="benefits__item-logo">
+                <img src="img/benefits2.png" alt="Participants">
+            </div>
             <div class="benefits__items-description">
 
                 <h3 class="benefits__description-title">
@@ -98,10 +138,9 @@
         </div>
 
         <div class="benefits__list-item benefits__list-item--reverse">
-            <picture>
-                <source media="(max-width:767px)" srcset="img/benefits-mobile.png">
-                <img class="benefits__item-logo" src="img/benefits.png" alt="Participants">
-            </picture>
+            <div class="benefits__item-logo">
+                <img src="img/benefits.png" alt="Participants">
+            </div>
             <div class="benefits__items-description">
                 <h3 class="benefits__description-title">
                     <span class="strong-800">Korzyści</span> dla uczestników<span class="strong-800">.</span>
@@ -142,9 +181,8 @@
     </div>
 </section>
 
-
 <section class="recognition">
-    <h2 class="recognition__title">O WYROŻNIENIU</h2>
+    <h2 class="section-title recognition__title">O WYROŻNIENIU</h2>
     <div class="recognition__columns">
         <div class="recognition__columns-column">
             <div class="recognition__column-img">
@@ -160,8 +198,7 @@
             <div class="recognition__column-text">
                 <p><strong>"Meritus"</strong> – oznacza "zasłużony", "godny" lub "nagrodzony". W
                     kontekście projektu, to słowo symbolizuje zasługę, doświadczenie oraz długotrwałą działalność
-                    firmy,
-                    która zdobywa swoją pozycję na rynku dzięki pracy, rzetelności i solidności.
+                    firmy, która zdobywa swoją pozycję na rynku dzięki pracy, rzetelności i solidności.
                 </p>
             </div>
         </div>
@@ -239,10 +276,9 @@
 <section class="tradition">
     <h2 class="tradition__title">WARTOŚCI</h2>
     <div class="tradition__content">
-        <picture>
-            <source media="(max-width:767px)" srcset="img/tradition-mobile.png">
-            <img class="tradition__content-logo" src="img/tradition.png" alt="People checking shoes">
-        </picture>
+        <div class="tradition__content-logo">
+            <img src="img/tradition.png" alt="People checking shoes">
+        </div>
         <div class="tradition__content-item-background">
             <div class="tradition__content-items">
                 <h3 class="tradition__content-item-title">
@@ -285,10 +321,9 @@
 <section class="persistence">
     <h2 class="persistence__title">WARTOŚCI</h2>
     <div class="persistence__content">
-        <picture>
-            <source media="(max-width:767px)" srcset="img/persistence-mobile.png">
-            <img class="persistence__content-logo" src="img/persistence.png" alt="People working together">
-        </picture>
+        <div class="persistence__content-logo">
+            <img src="img/persistence.png" alt="People working together">
+        </div>
         <div class="persistence__content-item-background">
             <div class="persistence__content-items">
                 <h3 class="persistence__content-item-title">
@@ -331,11 +366,9 @@
 <section class="quality">
     <h2 class="quality__title">WARTOŚCI</h2>
     <div class="quality__content">
-        <picture>
-            <source media="(max-width:767px)" srcset="img/quality-mobile.png">
-            <img class="quality__content-logo" src="img/quality.png" alt="Craftsman working">
-        </picture>
-
+        <div class="quality__content-logo">
+            <img src="img/quality.png" alt="Craftsman working">
+        </div>
         <div class="quality__content-item-background">
             <div class="quality__content-items">
                 <h3 class="quality__content-item-title">
@@ -376,7 +409,6 @@
     </div>
 </section>
 <section class="guests">
-
     <h2 class="guests__title">LISTA WYRÓŻNIONYCH</h2>
     <div class="award-list">
         <div class="award-item">
@@ -474,7 +506,11 @@
         <div class="text-section-trophy">
             <div class="statue-background">
                 <div class="features">
+                    <div class="image-section__mobile">
+                        <img src="img/statue.png" alt="Statuetka">
+                    </div>
                     <div class="feature-item">
+                        <img src="img/01.png" alt="" class="mob-01">
                         <div class="feature-text">
                             <h1>Statuetka</h1>
                             <p>
@@ -491,11 +527,16 @@
                                 charakter.
                             </p>
                         </div>
-                        <h2 class="statue__title-mobile">STATUETKA</h2>
+                        <h2 class="statue__title-mobile">
+                            STATUETKA
+                        </h2>
                     </div>
-                    <div class="feature-item">
+                    <div class="image-section__tablet">
+                        <img src="img/statue.png" alt="Statuetka">
+                    </div>
+                    <div class="feature-item description-item">
                         <div class="icon-statue">
-                            <img src="img/24karat.png" alt="24 karat gold icon">
+                            <img src="img/24karats.svg" alt="24 karat gold icon">
                         </div>
                         <div class="feature-text">
                             <h3>24 KARATOWE ZŁOTE</h3>
@@ -509,9 +550,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item description-item">
                         <div class="icon-statue">
-                            <img class="icon-second-35" src="img/full35.png" alt="line icon">
+                            <img class="icon-second-35" src="img/35cm.svg" alt="line icon">
                         </div>
                         <div class="feature-text">
                             <h3>MASYWNE, SOLIDNE WYKONANIE</h3>
@@ -524,9 +565,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item description-item">
                         <div class="icon-statue">
-                            <img src="img/vector3.png" alt="Engraving icon">
+                            <img src="img/individual_company_name.svg" alt="Engraving icon">
                         </div>
                         <div class="feature-text">
                             <h3>INDYWIDUALNY GRAWER Z NAZWĄ FIRMY</h3>
@@ -542,11 +583,7 @@
             </div>
         </div>
         <div class="image-section">
-            <picture>
-                <source media="(max-width:767px)" srcset="img/statue-mobile.png">
-                <img src="img/statue.png" alt="Statuetka">
-            </picture>
-
+            <img src="img/statue.png" alt="Statuetka">
         </div>
     </div>
 
@@ -574,17 +611,18 @@
             </div>
         </div>
     </div>
-
 </section>
-
 <section class="diploma">
     <h2 class="diploma__title">MATERIAŁY</h2>
     <div class="diploma-content">
         <div class="text-section-diploma">
             <div class="diploma-background">
                 <div class="features">
-
+                    <div class="image-section__mobile">
+                        <img src="img/diplom2.png" alt="Statuetka">
+                    </div>
                     <div class="feature-item">
+                        <img src="img/02.png" alt="" class="mob-02">
                         <div class="feature-text">
                             <h1>DYPLOM</h1>
                             <p>
@@ -599,15 +637,16 @@
                         </div>
                         <h2 class="diploma__title-mobile">DYPLOM</h2>
                     </div>
-
-                    <div class="feature-item">
+                    <div class="image-section__tablet image-section__tablet-diploma">
+                        <img src="img/diplom2.png" alt="Statuetka">
+                    </div>
+                    <div class="feature-item description-item">
                         <div class="icon-diploma">
-                            <img src="img/star100x100.png" alt="star icon">
+                            <img src="img/hq_print.svg" alt="star icon">
                         </div>
                         <div class="feature-text">
                             <h3>Druk z uszlachetnieniami </h3>
-                            <p>
-                                Dyplom wyróżnia się zastosowaniem wielu technik uszlachetniania druku,
+                            <p>Dyplom wyróżnia się zastosowaniem wielu technik uszlachetniania druku,
                                 które nadają mu wyjątkowy wygląd. Srebrna folia 3D podkreśla kluczowe elementy
                                 projektu, nadając im elegancki,
                                 połyskujący akcent. Dodatkowo folia smooth touch zapewnia subtelne,
@@ -617,9 +656,9 @@
                         </div>
                     </div>
 
-                    <div class="feature-item">
+                    <div class="feature-item description-item">
                         <div class="icon-diploma">
-                            <img src="img/frame100x100.png" alt="frame">
+                            <img src="img/a4_frame.svg" alt="frame">
                         </div>
                         <div class="feature-text">
                             <h3>Elegancka rama</h3>
@@ -633,9 +672,9 @@
                         </div>
                     </div>
 
-                    <div class="feature-item">
+                    <div class="feature-item description-item">
                         <div class="icon-diploma">
-                            <img src="img/vector3.png" alt="Engraving icon">
+                            <img src="img/individual_company_name.svg" alt="Engraving icon">
                         </div>
                         <div class="feature-text">
                             <h3>INDYWIDUALNY GRAWER Z NAZWĄ FIRMY</h3>
@@ -651,11 +690,8 @@
                 </div>
             </div>
         </div>
-        <div class="image-section-diploma">
-            <picture>
-                <source media="(max-width:767px)" srcset="img/diploma-mobile.png">
-                <img src="img/diplom2.png" alt="Statuetka">
-            </picture>
+        <div class="image-section">
+            <img src="img/diplom2.png" alt="Statuetka">
         </div>
     </div>
     <div class="diploma__list-bottom-menu">
@@ -690,10 +726,7 @@
     <div class="content-contact">
         <div class="left-section">
             <div class="contact-logo">
-                <picture>
-                    <source media="(max-width:767px)" srcset="img/contact-mobile.png">
-                    <img src="img/contactus.png" alt="Prestiżowe firmy">
-                </picture>
+                <img src="img/contactus.png" alt="Prestiżowe firmy">
             </div>
             <div class="text-section-contact">
                 <h1>Dołącz do grona prestiżowych firm</h1>
@@ -706,7 +739,7 @@
 
         <div class="right-section">
             <div class="form-container">
-                <p class="highlight">Twoja firma istnieje co najmniej 5 lat na rynku? <strong>Możesz dołączyć do
+                <p class="highlight">Twoja firma istnieje co najmniej 5 lat na rynku?<br><strong>Możesz dołączyć do
                     projektu!</strong></p>
                 <form action="/submit" method="post" class="contact-us__form">
                     <input type="text" name="company_name" class="contact-us__form-input" placeholder="Nazwa firmy">
