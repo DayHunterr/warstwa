@@ -236,10 +236,6 @@ hr {
     margin: 10% 10% 1% 9.5%;
 }
 
-.strong-800 {
-    font-weight: 800;
-}
-
 .benefits {
     padding: 0 calc(var(--section-padding)) 0 calc(var(--menu-width) + var(--section-padding));
 }
@@ -323,15 +319,11 @@ hr {
     line-height: normal;
 }
 
-.column .font-400,
-.column .font-500,
-.column .font-700 {
+.column .font-w-400,
+.column .font-w-500,
+.column .font-w-700 {
     font-size: 30px;
     color: #a55726;
-}
-
-.recognition__columns-column p strong {
-    font-style: italic;
 }
 
 .recognition__columns {
@@ -363,24 +355,37 @@ hr {
     font-size: 30px;
 }
 
-.font-400, .font-500, .font-700 {
-    color: #85644E;
+.recognition__column-header span{
     line-height: normal;
     text-align: center;
-    margin: 0;
 }
 
-.font-400 {
+.font-w-400 {
     font-weight: 400;
-    font-style: italic;
 }
 
-.font-500 {
+.font-w-500 {
     font-weight: 500;
 }
 
-.font-700 {
+.font-w-700 {
     font-weight: 700;
+}
+
+.font-w-800 {
+    font-weight: 800;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-light-brown {
+    color: #85644E;
+}
+
+.font-style-italic{
+    font-style: italic;
 }
 
 .recognition__column-text {
@@ -448,15 +453,15 @@ hr {
 }
 
 .tradition__content-item-background {
-    background-image: url("../img/01.png");
+    background-image: url("../img/01-icon.png");
 }
 
 .persistence__content-item-background {
-    background-image: url("../img/02.png");
+    background-image: url("../img/02-icon.png");
 }
 
 .quality__content-item-background {
-    background-image: url("../img/03.png");
+    background-image: url("../img/03-icon.png");
 }
 
 .award-list {
@@ -606,16 +611,22 @@ hr {
     font-weight: bold;
 }
 
-.text-section-trophy h1 {
+.text-section-trophy .feature-item .feature-text h2 {
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: none;
+    text-transform: none;
 }
 
-.text-section-diploma h1 {
+.text-section-diploma .feature-item .feature-text h2 {
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 10px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: none;
+    text-transform: none;
 }
 
 .text-section-trophy p {
@@ -812,14 +823,14 @@ hr {
 }
 
 .statue-background {
-    background-image: url("../img/01.png");
+    background-image: url("../img/01-icon.png");
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: 100% 0;
 }
 
 .diploma-background {
-    background-image: url("../img/02.png");
+    background-image: url("../img/02-icon.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 100% 6%;
@@ -841,7 +852,7 @@ hr {
     max-width: 500px;
 }
 
-.left-section h1 {
+.left-section h3 {
     width: 100%;
     margin-bottom: 2%;
     color: #000;
@@ -1133,7 +1144,7 @@ hr {
         font-size: 18px;
     }
 
-    .text-section-trophy h1, .text-section-diploma h1 {
+    .text-section-trophy h2, .text-section-diploma h2 {
         font-size: 45px;
     }
 
@@ -1157,7 +1168,7 @@ hr {
         width: 100%;
     }
 
-    .left-section h1 {
+    .left-section h3 {
         font-size: 26px
     }
 
@@ -1213,7 +1224,7 @@ hr {
         font-size: 16px;
     }
 
-    .text-section-trophy h1, .text-section-diploma h1 {
+    .text-section-trophy h2, .text-section-diploma h2 {
         font-size: 42px;
     }
 
@@ -1267,7 +1278,7 @@ hr {
         max-width: 450px;
     }
 
-    .left-section h1 {
+    .left-section h3 {
         font-size: 24px
     }
 
@@ -1315,7 +1326,7 @@ hr {
         font-size: 16px;
     }
 
-    .text-section-trophy h1, .text-section-diploma h1 {
+    .text-section-trophy h2, .text-section-diploma h2 {
         font-size: 38px;
     }
 
@@ -1438,7 +1449,7 @@ hr {
         margin: 60px 0;
     }
 
-    .text-section-trophy h1, .text-section-diploma h1 {
+    .text-section-trophy h2, .text-section-diploma h2 {
         font-size: 30px;
     }
 
@@ -1490,7 +1501,7 @@ hr {
         font-size: 16px;
     }
 
-    .left-section h1 {
+    .left-section h3 {
         font-size: 20px;
     }
 
@@ -1962,8 +1973,8 @@ hr {
         flex-direction: column;
     }
 
-    .text-section-trophy h1,
-    .text-section-diploma h1 {
+    .text-section-trophy h2,
+    .text-section-diploma h2 {
         color: #000;
         font-size: 30px;
         font-style: normal;
@@ -2044,7 +2055,7 @@ hr {
         margin-left: 0;
     }
 
-    .left-section h1 {
+    .left-section h3 {
         width: 95%;
         color: #000;
         font-size: 20px;
