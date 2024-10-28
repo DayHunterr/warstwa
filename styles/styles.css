@@ -1789,6 +1789,10 @@ hr {
         cursor: pointer;
     }
 
+    .no-scroll {
+        overflow: hidden;
+    }
+
     .benefits, .recognition, .tradition,
     .persistence, .quality, .contact,
     .guests, .statue, .diploma, .contact {
