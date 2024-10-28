@@ -16,8 +16,28 @@ body {
     background-color: #FFF;
 }
 
-.nav_mobile, .statue__title-mobile, .diploma__title-mobile {
-    display: none !important;
+
+.nav_mobile {
+    display: none;
+}
+
+/*.text-section-diploma > div > div > div:nth-child(2) > h2,*/
+/*.text-section-trophy > div > div > div:nth-child(2) > h2{*/
+/*    display: none;*/
+/*}*/
+
+/*.feature-item > div > h2 {*/
+/*    display: none;*/
+/*}*/
+/*.statue__title-mobile {*/
+/*    display: none;*/
+/*}*/
+#statue-top-line {
+    display: none;
+}
+
+#diploma-top-line {
+    display: none;
 }
 
 .main {
@@ -57,7 +77,89 @@ body {
     justify-content: space-between;
     padding: 20px 0;
     z-index: 99;
+
 }
+
+
+/*/Боковое меню */
+.main__side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    transition: left 0.3s ease;
+    padding: 30px 0 20px 0;
+    color: white;
+    z-index: 97;
+}
+
+
+.main__side-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px; /* Положение линии */
+    width: 2px; /* Ширина линии */
+    height: 100%; /* Полная высота меню */
+    background-color: white; /* Цвет линии */
+}
+
+
+/* Контейнер для текста в боковом меню */
+.main__menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+
+.main__menu-items li {
+    text-align: left;
+    display: flex;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(255, 255, 255, 0.30);
+    width: 100%;
+}
+
+.main__menu-items li a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 20px 20px 60px;
+}
+
+/* Кнопка "Zgłoś się" */
+.action-btn {
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-color: #8c6949;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    flex-shrink: 0;
+}
+
+.side__bottom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Показать меню */
+.main__side-menu.open {
+    left: var(--menu-width);
+    z-index: 97
+}
+
 
 .main__hero {
     display: flex;
@@ -355,7 +457,7 @@ hr {
     font-size: 30px;
 }
 
-.recognition__column-header span{
+.recognition__column-header span {
     line-height: normal;
     text-align: center;
 }
@@ -384,7 +486,7 @@ hr {
     color: #85644E;
 }
 
-.font-style-italic{
+.font-style-italic {
     font-style: italic;
 }
 
@@ -1095,6 +1197,7 @@ hr {
         --tradition-padding: 90px;
     }
 
+
     .hero__content-text {
         font-size: 40px;
     }
@@ -1146,6 +1249,13 @@ hr {
 
     .text-section-trophy h2, .text-section-diploma h2 {
         font-size: 45px;
+    }
+
+    /*.text-section-diploma > div > div > div:nth-child(2) > h2 {*/
+    /*    display: none;*/
+    /*}*/
+    .feature-item > h2 {
+        display: none;
     }
 
     .feature-text:not(:first-child) {
@@ -1517,8 +1627,16 @@ hr {
 }
 
 @media (max-width: 767px) {
-    .statue__title-mobile, .main__sidebar, .diploma__title-mobile {
-        display: none !important;
+    .main__sidebar {
+        display: none
+    }
+
+    #statue-top-line {
+        display: block;
+    }
+
+    #diploma-top-line {
+        display: block;
     }
 
     #mob_menu {
@@ -1571,6 +1689,13 @@ hr {
         right: 24px;
     }
 
+
+    /*.feature-item > h2 {*/
+    /*    display: block; !important;*/
+    /*    font-size: 16px;*/
+    /*    font-style: normal;*/
+    /*    font-weight: 700;*/
+    /*}*/
     #menu__toggle:checked ~ .menu__btn > span {
         transform: rotate(45deg);
     }
@@ -1657,7 +1782,7 @@ hr {
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
         border-radius: 5px;
         background: #85644E;
         padding: 10px;
@@ -2027,12 +2152,14 @@ hr {
     }
 
     .diploma h2, .statue h2 {
+        display: block;
         margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 700;
     }
 
     .image-section-diploma img {
         width: 95%;
-
     }
 
     .image-section {
@@ -2131,7 +2258,7 @@ hr {
         margin-top: 15%;
     }
 
-    .icon-diploma img{
+    .icon-diploma img {
         height: 80px;
         width: 80px;
     }
