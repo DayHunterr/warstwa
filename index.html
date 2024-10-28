@@ -3,19 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meritus Mercatum</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
     <link rel="stylesheet" href="styles/global.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div class="snap-container">
 <div class="main__sidebar">
     <div class="main__sidebar-top">
         <div class="main__top-icon">
@@ -30,10 +28,10 @@
     </div>
     <hr>
     <div class="main__sidebar-bottom">
-        <nav class="main__bottom-text">
+        <a class="main__bottom-text" href="#contact-form">
             <span class="font-w-800">Zgłoś się</span>
             <span>do projektu</span>
-        </nav>
+        </a>
     </div>
 </div>
 <div class="main__side-menu" id="sideMenu">
@@ -126,7 +124,7 @@
 </section>
 
 
-<section class="benefits">
+<section class="benefits ">
     <h2 class="section-title benefits__title">O WYROŻNIENIU</h2>
     <div class="benefits__list">
         <div class="benefits__list-item">
@@ -286,7 +284,6 @@
         </div>
     </div>
 </section>
-
 <section class="tradition">
     <h2 class="tradition__title">WARTOŚCI</h2>
     <div class="tradition__content">
@@ -719,7 +716,7 @@
         </div>
     </div>
 </section>
-<section class="contact">
+<section id="contact-form" class="contact">
     <h2 class="contact__title">DOŁĄCZ</h2>
     <div class="content-contact">
         <div class="left-section">
@@ -777,7 +774,10 @@
         </div>
     </div>
 </section>
+</div>
+
 <script src="js/desktop-menu.js"></script>
 <script src="js/turnoff-scroll.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

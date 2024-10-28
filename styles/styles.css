@@ -16,6 +16,18 @@ body {
     background-color: #FFF;
 }
 
+.snap-container {
+    overflow-x: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh; /* Или необходимая высота */
+    scroll-behavior: smooth;
+}
+
+.snap-container section {
+    scroll-snap-align: start;
+    /*height: 100vh; !* Чтобы секция занимала весь экран *!*/
+}
+
 
 .nav_mobile {
     display: none;
@@ -294,7 +306,7 @@ hr {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 150px;
-    margin-top: 120px;
+    margin-top: 95px;
     white-space: nowrap;
     border-bottom: 1px solid;
     border-bottom-color: black;
