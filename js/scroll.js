@@ -22,7 +22,7 @@ container.addEventListener('wheel', (event) => {
         });
         setTimeout(() => {
             isScrolling = false;
-        }, 1000);
+        }, 4000);
     } else {
         isScrolling = false;
     }

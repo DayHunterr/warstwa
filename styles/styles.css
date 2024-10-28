@@ -89,6 +89,9 @@ html{
 
 }
 
+.mob__side-menu {
+  display: none;
+}
 
 /*/Боковое меню */
 .main__side-menu {
@@ -1228,6 +1231,10 @@ hr {
         padding-top: 70px;
     }
 
+    .mob__side-menu {
+        display: none;
+    }
+
     .benefits__description-text {
         font-size: 15px;
     }
@@ -1647,6 +1654,20 @@ hr {
 @media (max-width: 767px) {
     .main__sidebar {
         display: none
+    }
+
+    .mob__side-menu {
+        display: flex;
+        position: fixed;
+        transform: rotate(-90deg);
+        width: 100%;
+        height: 60px;
+        z-index: 90;
+    }
+
+    .bottom-menu__container-items{
+        height: 30%;
+        width: 100vw;
     }
 
     #statue-top-line {
