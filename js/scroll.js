@@ -1,11 +1,12 @@
-const sections = document.querySelectorAll('.snap-container section');
+const container = document.querySelector('.snap-container');
+const sections = container.querySelectorAll('section');
 let isScrolling = false;
 
-document.addEventListener('wheel', (event) => {
+container.addEventListener('wheel', (event) => {
     if (isScrolling) return;
 
     isScrolling = true;
-    const currentScroll = window.scrollY;
+    const currentScroll = container.scrollTop;
     let nextSection;
 
     if (event.deltaY > 0) { // Скролл вниз
@@ -15,34 +16,30 @@ document.addEventListener('wheel', (event) => {
     }
 
     if (nextSection) {
-        smoothScrollTo(nextSection.offsetTop, 1000); // Продолжительность анимации
+        container.scrollTo({
+            top: nextSection.offsetTop,
+            behavior: 'smooth'
+        });
+        setTimeout(() => {
+            isScrolling = false;
+        }, 1000);
     } else {
         isScrolling = false;
     }
 });
 
-// Функция для плавного скролла
-function smoothScrollTo(targetPosition, duration) {
-    const startPosition = window.scrollY;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
+// Плавная прокрутка при клике на якорь
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Отменить стандартное поведение
 
-    function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = ease(timeElapsed, startPosition, distance, duration);
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
 
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-        else isScrolling = false;
-    }
-
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    }
-
-    requestAnimationFrame(animation);
-}
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});

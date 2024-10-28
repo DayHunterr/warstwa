@@ -8,91 +8,169 @@
     <link rel="stylesheet" href="styles/global.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
 </head>
 <body>
-<div class="snap-container">
-<div class="main__sidebar">
-    <div class="main__sidebar-top">
-        <div class="main__top-icon">
-            <img src="img/meritus_mercatum_main_hu.png" alt="Logo">
+    <div class="main__sidebar">
+        <div class="main__sidebar-top">
+            <div class="main__top-icon">
+                <img src="img/meritus_mercatum_main_hu.png" alt="Logo">
+            </div>
+            <div class="main__top-line-container" onclick="toggleMenu()">
+                <div class="line-main"></div>
+                <div class="line-main"></div>
+                <div class="line-main"></div>
+                <div class="line-main"></div>
+            </div>
         </div>
-        <div class="main__top-line-container" onclick="toggleMenu()">
-            <div class="line-main"></div>
-            <div class="line-main"></div>
-            <div class="line-main"></div>
-            <div class="line-main"></div>
-        </div>
-    </div>
-    <hr>
-    <div class="main__sidebar-bottom">
-        <a class="main__bottom-text" href="#contact-form">
-            <span class="font-w-800">Zgłoś się</span>
-            <span>do projektu</span>
-        </a>
-    </div>
-</div>
-<div class="main__side-menu" id="sideMenu">
-    <ul class="main__menu-items">
-        <li><a class="font-w-400" href="#">O Wyróżnieniu</a></li>
-        <li><a class="font-w-400" href="#">Wartości</a></li>
-        <li><a class="font-w-400" href="#">Lista Wyróżnionych</a></li>
-        <li><a class="font-w-400" href="#">Materiały</a></li>
-        <li><a class="font-w-400" href="#">Regulamin</a></li>
-    </ul>
-    <div class="side__bottom-button">
-        <button class="action-btn font-w-700">ZGŁOŚ SIĘ</button>
-    </div>
-</div>
-<section class="main">
-    <div class="nav_mobile">
-        <div class="nav_mobile__logo">
-            <a href="#" class="nav_mobile__logo-link">
-                <img src="img/logo_ro.svg" alt="Logo">
+        <hr>
+        <div class="main__sidebar-bottom">
+            <a class="main__bottom-text" href="#contact-form">
+                <span class="font-w-800">Zgłoś się</span>
+                <span>do projektu</span>
             </a>
         </div>
-        <div id="mob_menu">
-            <input id="menu__toggle" type="checkbox" data-nav-target="mobMenuTrigger">
-            <label class="menu__btn" for="menu__toggle" data-action="click->nav#onShowMobileMenu">
-                <span></span>
-            </label>
-            <div id="mob-items">
-                <div class="mob-nav-item">
-                    <a href="#">Balíček materiálov</a>
-                </div>
-                <div class="mob-nav-item">
-                    <a href="#">Wartości</a>
-                </div>
-                <div class="mob-nav-item">
-                    <a href="#">Lista wyróżnionych</a>
-                </div>
-                <div class="mob-nav-item">
-                    <a href="#">Materiały</a>
-                </div>
-                <div class="mob-nav-item">
-                    <a href="#">Regulamin</a>
-                </div>
-                <div class="mob-nav-btn">
-                    <a href="#">zgłoś sIę</a>
+    </div>
+    <div class="main__side-menu" id="sideMenu">
+        <ul class="main__menu-items">
+            <li><a class="font-w-400" href="#">O Wyróżnieniu</a></li>
+            <li><a class="font-w-400" href="#">Wartości</a></li>
+            <li><a class="font-w-400" href="#">Lista Wyróżnionych</a></li>
+            <li><a class="font-w-400" href="#">Materiały</a></li>
+            <li><a class="font-w-400" href="#">Regulamin</a></li>
+        </ul>
+        <div class="side__bottom-button">
+            <button class="action-btn font-w-700">ZGŁOŚ SIĘ</button>
+        </div>
+    </div>
+    <div class="snap-container">
+    <section class="main">
+        <div class="nav_mobile">
+            <div class="nav_mobile__logo">
+                <a href="#" class="nav_mobile__logo-link">
+                    <img src="img/logo_ro.svg" alt="Logo">
+                </a>
+            </div>
+            <div id="mob_menu">
+                <input id="menu__toggle" type="checkbox" data-nav-target="mobMenuTrigger">
+                <label class="menu__btn" for="menu__toggle" data-action="click->nav#onShowMobileMenu">
+                    <span></span>
+                </label>
+                <div id="mob-items">
+                    <div class="mob-nav-item">
+                        <a href="#">Balíček materiálov</a>
+                    </div>
+                    <div class="mob-nav-item">
+                        <a href="#">Wartości</a>
+                    </div>
+                    <div class="mob-nav-item">
+                        <a href="#">Lista wyróżnionych</a>
+                    </div>
+                    <div class="mob-nav-item">
+                        <a href="#">Materiały</a>
+                    </div>
+                    <div class="mob-nav-item">
+                        <a href="#">Regulamin</a>
+                    </div>
+                    <div class="mob-nav-btn">
+                        <a href="#">zgłoś sIę</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main__container">
-        <div class="main__hero">
-            <div class="hero__content">
-                <div class="hero__content-image">
-                    <img class="main-img" src="img/meritus_mercatum_main-custom.svg" alt="Hero Meritus Mercatum Logo">
+        <div class="main__container">
+            <div class="main__hero">
+                <div class="hero__content">
+                    <div class="hero__content-image">
+                        <img class="main-img" src="img/meritus_mercatum_main-custom.svg"
+                             alt="Hero Meritus Mercatum Logo">
+                    </div>
+                    <div class="hero__content-text">
+                        <span class="font-w-400">ZASŁUŻENI</span>
+                        <span class="font-w-700">DLA GOSPODARKI</span>
+                    </div>
                 </div>
-                <div class="hero__content-text">
-                    <span class="font-w-400">ZASŁUŻENI</span>
-                    <span class="font-w-700">DLA GOSPODARKI</span>
+
+                <div class="hero__content-bottom-menu">
+                    <div class="bottom-menu__container-items">
+                        <div class="bottom-menu__container-item">
+                            <p class="bottom-text">O WYROŻNIENIU</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="bottom-menu__container-item">
+                            <p class="bottom-text">WARTOŚCI</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="bottom-menu__container-item">
+                            <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="bottom-menu__container-item">
+                            <p class="bottom-text">MATERIAŁY</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="bottom-menu__container-item">
+                            <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__signup-button">
+            ZGŁoś SIę
+        </div>
+    </section>
+
+
+    <section class="benefits ">
+        <h2 class="section-title benefits__title">O WYROŻNIENIU</h2>
+        <div class="benefits__list">
+            <div class="benefits__list-item">
+                <div class="benefits__item-logo">
+                    <img src="img/man-smiling-in-glasses-event.png" alt="Man in Glasses">
+                </div>
+                <div class="benefits__items-description">
+
+                    <h3 class="benefits__description-title">
+                        Czym jest <span class="font-w-800">Meritus Mercatum</span>?
+                    </h3>
+                    <div class="benefits__description-text">
+                        Firmy, które biorą udział w projekcie, mogą liczyć na wyjątkowe wsparcie w promocji swojego
+                        wizerunku. <span class="font-w-800">Laureaci otrzymują unikatowe materiały,</span> takie jak
+                        elegancka statuetka, dyplom oraz inne elementy wizualne, które stanowią dowód uznania ich
+                        wieloletniej działalności i budują ich prestiż w oczach klientów.
+                    </div>
                 </div>
             </div>
 
-            <div class="hero__content-bottom-menu">
+            <div class="benefits__list-item benefits__list-item--reverse">
+                <div class="benefits__item-logo">
+                    <img src="img/meritus-mercatum-coin.png" alt="Meritus Mercatum Coin">
+                </div>
+                <div class="benefits__items-description">
+                    <h3 class="benefits__description-title">
+                        <span class="font-w-800">Korzyści</span> dla uczestników<span class="font-w-800">.</span>
+                    </h3>
+                    <div class="benefits__description-text">
+                        <span class="font-w-800">Meritus Mercatum</span> to prestiżowy projekt skierowany do firm, które
+                        od
+                        lat z
+                        powodzeniem budują swoją markę i pozycję na rynku. Naszą misją jest wsparcie przedsiębiorstw z
+                        wieloletnią tradycją, pomagając im umocnić wizerunek jako stabilnych, godnych zaufania partnerów
+                        biznesowych. Uznajemy doświadczenie, solidność oraz ciągłość działań, które przyczyniają się do
+                        sukcesów tych firm.
+                    </div>
+                </div>
+            </div>
+            <div class="benefits__list-bottom-menu">
                 <div class="bottom-menu__container-items">
                     <div class="bottom-menu__container-item">
                         <p class="bottom-text">O WYROŻNIENIU</p>
@@ -117,53 +195,79 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main__signup-button">
-        ZGŁoś SIę
-    </div>
-</section>
+    </section>
 
-
-<section class="benefits ">
-    <h2 class="section-title benefits__title">O WYROŻNIENIU</h2>
-    <div class="benefits__list">
-        <div class="benefits__list-item">
-            <div class="benefits__item-logo">
-                <img src="img/man-smiling-in-glasses-event.png" alt="Man in Glasses">
+    <section class="recognition">
+        <h2 class="section-title recognition__title">O WYROŻNIENIU</h2>
+        <div class="recognition__columns">
+            <div class="recognition__columns-column">
+                <div class="recognition__column-img">
+                    <img class="recognition__column-logo" src="img/gear-icon.png" alt="Gear Icon">
+                </div>
+                <div class="recognition__column-header">
+                    <p class="color-light-brown">
+                        <span class="font-w-400 font-style-italic">meritus</span>
+                        <span class="font-w-500 ">(język łaciński):</span>
+                        <span class="font-w-700 ">godny, zasłużony </span>
+                    </p>
+                </div>
+                <div class="recognition__column-text">
+                    <p><span class="font-w-700 color-black font-style-italic">"Meritus"</span> – oznacza "zasłużony",
+                        "godny" lub "nagrodzony". W
+                        kontekście projektu, to słowo symbolizuje zasługę, doświadczenie oraz długotrwałą działalność
+                        firmy, która zdobywa swoją pozycję na rynku dzięki pracy, rzetelności i solidności.
+                    </p>
+                </div>
             </div>
-            <div class="benefits__items-description">
 
-                <h3 class="benefits__description-title">
-                    Czym jest <span class="font-w-800">Meritus Mercatum</span>?
-                </h3>
-                <div class="benefits__description-text">
-                    Firmy, które biorą udział w projekcie, mogą liczyć na wyjątkowe wsparcie w promocji swojego
-                    wizerunku. <span class="font-w-800">Laureaci otrzymują unikatowe materiały,</span> takie jak
-                    elegancka statuetka, dyplom oraz inne elementy wizualne, które stanowią dowód uznania ich
-                    wieloletniej działalności i budują ich prestiż w oczach klientów.
+            <div class="recognition__columns-column">
+                <div class="recognition__column-img">
+                    <img class="recognition__column-logo" src="img/graph-icon.png" alt="Graph Icon">
+                </div>
+                <div class="recognition__column-header">
+                    <p class="color-light-brown">
+                        <span class="font-w-400 font-style-italic">mercatum</span>
+                        <span class="font-w-500">(język łaciński):</span>
+                        <span class="font-w-700">rynek, targ</span>
+                    </p>
+                </div>
+                <div class="recognition__column-text">
+                    <p><span class="font-w-700 color-black font-style-italic">"Mercatum"</span> – to słowo odnosi się do
+                        "rynku" lub "handlu". Jest bezpośrednim
+                        nawiązaniem do działalności gospodarczej, handlowej i biznesowej. Symbolizuje przestrzeń, w
+                        której
+                        odbywa się wymiana towarów, usług i idei – tak jak w przypadku przedsiębiorstw, które budują
+                        swoje
+                        relacje i pozycję na rynku.
+                    </p>
+                </div>
+            </div>
+
+            <div class="recognition__columns-column">
+                <div class="recognition__column-img">
+                    <img class="recognition__column-logo" src="img/meritus-mercatum-icon.png"
+                         alt="Meritus Mercatum Icon">
+                </div>
+                <div class="recognition__column-header">
+                    <p class="color-light-brown">
+                        <span class="font-w-400 font-style-italic">meritus mercatum</span>
+                        <span class="font-w-500">(język łaciński):</span>
+                        <span class="font-w-700">zasłużony dla gospodarki</span>
+                    </p>
+                </div>
+                <div class="recognition__column-text">
+                    <p><span class="font-w-700 color-black font-style-italic">Meritus Mercatum</span> można zatem
+                        interpretować jako "Zasłużony dla gospodarki", co
+                        podkreśla fakt, że projekt skierowany jest do firm, które zasłużyły na uznanie i wyróżnienie
+                        dzięki
+                        swojej długotrwałej i stabilnej działalności. Nazwa ta odzwierciedla ideę, że firmy
+                        uczestniczące w
+                        projekcie zasługują na szczególne uznanie w swojej branży i na rynku.
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div class="benefits__list-item benefits__list-item--reverse">
-            <div class="benefits__item-logo">
-                <img src="img/meritus-mercatum-coin.png" alt="Meritus Mercatum Coin">
-            </div>
-            <div class="benefits__items-description">
-                <h3 class="benefits__description-title">
-                    <span class="font-w-800">Korzyści</span> dla uczestników<span class="font-w-800">.</span>
-                </h3>
-                <div class="benefits__description-text">
-                    <span class="font-w-800">Meritus Mercatum</span> to prestiżowy projekt skierowany do firm, które od
-                    lat z
-                    powodzeniem budują swoją markę i pozycję na rynku. Naszą misją jest wsparcie przedsiębiorstw z
-                    wieloletnią tradycją, pomagając im umocnić wizerunek jako stabilnych, godnych zaufania partnerów
-                    biznesowych. Uznajemy doświadczenie, solidność oraz ciągłość działań, które przyczyniają się do
-                    sukcesów tych firm.
-                </div>
-            </div>
-        </div>
-        <div class="benefits__list-bottom-menu">
+        <div class="recognition__list-bottom-menu">
             <div class="bottom-menu__container-items">
                 <div class="bottom-menu__container-item">
                     <p class="bottom-text">O WYROŻNIENIU</p>
@@ -187,595 +291,503 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="recognition">
-    <h2 class="section-title recognition__title">O WYROŻNIENIU</h2>
-    <div class="recognition__columns">
-        <div class="recognition__columns-column">
-            <div class="recognition__column-img">
-                <img class="recognition__column-logo" src="img/gear-icon.png" alt="Gear Icon">
+    </section>
+    <section class="tradition">
+        <h2 class="tradition__title">WARTOŚCI</h2>
+        <div class="tradition__content">
+            <div class="tradition__content-logo">
+                <img src="img/tradition.png" alt="People Checking Shoes">
             </div>
-            <div class="recognition__column-header">
-                <p class="color-light-brown">
-                    <span class="font-w-400 font-style-italic">meritus</span>
-                    <span class="font-w-500 ">(język łaciński):</span>
-                    <span class="font-w-700 ">godny, zasłużony </span>
-                </p>
-            </div>
-            <div class="recognition__column-text">
-                <p><span class="font-w-700 color-black font-style-italic">"Meritus"</span> – oznacza "zasłużony",
-                    "godny" lub "nagrodzony". W
-                    kontekście projektu, to słowo symbolizuje zasługę, doświadczenie oraz długotrwałą działalność
-                    firmy, która zdobywa swoją pozycję na rynku dzięki pracy, rzetelności i solidności.
-                </p>
+            <div class="tradition__content-item-background">
+                <div class="tradition__content-items">
+                    <h3 class="tradition__content-item-title color-black">
+                        <span class="font-w-700">TRADYCJA</span>
+                    </h3>
+                    <p class="tradition__content-item-text">Firmy z tradycjami to fundament stabilnego rynku. W Meritus
+                        Mercatum
+                        doceniamy
+                        przedsiębiorstwa, które od pokoleń pielęgnują wartości przekazywane z rąk do rąk. Ich
+                        doświadczenie
+                        i ciągłość działania budują zaufanie klientów oraz partnerów biznesowych.</p>
+                </div>
             </div>
         </div>
-
-        <div class="recognition__columns-column">
-            <div class="recognition__column-img">
-                <img class="recognition__column-logo" src="img/graph-icon.png" alt="Graph Icon">
-            </div>
-            <div class="recognition__column-header">
-                <p class="color-light-brown">
-                    <span class="font-w-400 font-style-italic">mercatum</span>
-                    <span class="font-w-500">(język łaciński):</span>
-                    <span class="font-w-700">rynek, targ</span>
-                </p>
-            </div>
-            <div class="recognition__column-text">
-                <p><span class="font-w-700 color-black font-style-italic">"Mercatum"</span> – to słowo odnosi się do
-                    "rynku" lub "handlu". Jest bezpośrednim
-                    nawiązaniem do działalności gospodarczej, handlowej i biznesowej. Symbolizuje przestrzeń, w
-                    której
-                    odbywa się wymiana towarów, usług i idei – tak jak w przypadku przedsiębiorstw, które budują
-                    swoje
-                    relacje i pozycję na rynku.
-                </p>
-            </div>
-        </div>
-
-        <div class="recognition__columns-column">
-            <div class="recognition__column-img">
-                <img class="recognition__column-logo" src="img/meritus-mercatum-icon.png" alt="Meritus Mercatum Icon">
-            </div>
-            <div class="recognition__column-header">
-                <p class="color-light-brown">
-                    <span class="font-w-400 font-style-italic">meritus mercatum</span>
-                    <span class="font-w-500">(język łaciński):</span>
-                    <span class="font-w-700">zasłużony dla gospodarki</span>
-                </p>
-            </div>
-            <div class="recognition__column-text">
-                <p><span class="font-w-700 color-black font-style-italic">Meritus Mercatum</span> można zatem
-                    interpretować jako "Zasłużony dla gospodarki", co
-                    podkreśla fakt, że projekt skierowany jest do firm, które zasłużyły na uznanie i wyróżnienie
-                    dzięki
-                    swojej długotrwałej i stabilnej działalności. Nazwa ta odzwierciedla ideę, że firmy
-                    uczestniczące w
-                    projekcie zasługują na szczególne uznanie w swojej branży i na rynku.
-                </p>
+        <div class="tradition__list-bottom-menu">
+            <div class="bottom-menu__container-items">
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">WARTOŚCI</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">MATERIAŁY</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="recognition__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
+    </section>
+    <section class="persistence">
+        <h2 class="persistence__title">WARTOŚCI</h2>
+        <div class="persistence__content">
+            <div class="persistence__content-logo">
+                <img src="img/old-man-woman-together.png" alt="Potters Working Together">
             </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
+            <div class="persistence__content-item-background">
+                <div class="persistence__content-items">
+                    <h3 class="persistence__content-item-title color-black">
+                        <span class="font-w-700">WYTRWAŁOŚĆ</span>
+                    </h3>
+                    <p class="persistence__content-item-text">Firmy z tradycjami to fundament stabilnego rynku. W
+                        Meritus
+                        Mercatum
+                        doceniamy
+                        przedsiębiorstwa, które od pokoleń pielęgnują wartości przekazywane z rąk do rąk. Ich
+                        doświadczenie
+                        i ciągłość działania budują zaufanie klientów oraz partnerów biznesowych.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="tradition">
-    <h2 class="tradition__title">WARTOŚCI</h2>
-    <div class="tradition__content">
-        <div class="tradition__content-logo">
-            <img src="img/tradition.png" alt="People Checking Shoes">
-        </div>
-        <div class="tradition__content-item-background">
-            <div class="tradition__content-items">
-                <h3 class="tradition__content-item-title color-black">
-                    <span class="font-w-700">TRADYCJA</span>
-                </h3>
-                <p class="tradition__content-item-text">Firmy z tradycjami to fundament stabilnego rynku. W Meritus
-                    Mercatum
-                    doceniamy
-                    przedsiębiorstwa, które od pokoleń pielęgnują wartości przekazywane z rąk do rąk. Ich
-                    doświadczenie
-                    i ciągłość działania budują zaufanie klientów oraz partnerów biznesowych.</p>
+        <div class="persistence__list-bottom-menu">
+            <div class="bottom-menu__container-items">
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">WARTOŚCI</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">MATERIAŁY</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="tradition__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
+    </section>
+    <section class="quality">
+        <h2 class="quality__title">WARTOŚCI</h2>
+        <div class="quality__content">
+            <div class="quality__content-logo">
+                <img src="img/old-main-in-glasses-workshop.png" alt="Old Craftsman Working">
             </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
+            <div class="quality__content-item-background">
+                <div class="quality__content-items">
+                    <h3 class="quality__content-item-title color-black">
+                        <span class="font-w-700">WYSOKA JAKOŚĆ</span>
+                    </h3>
+                    <p class="quality__content-item-text">Firmy z tradycjami to fundament stabilnego rynku. W Meritus
+                        Mercatum
+                        doceniamy
+                        przedsiębiorstwa, które od pokoleń pielęgnują wartości przekazywane z rąk do rąk. Ich
+                        doświadczenie
+                        i ciągłość działania budują zaufanie klientów oraz partnerów biznesowych.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="persistence">
-    <h2 class="persistence__title">WARTOŚCI</h2>
-    <div class="persistence__content">
-        <div class="persistence__content-logo">
-            <img src="img/old-man-woman-together.png" alt="Potters Working Together">
-        </div>
-        <div class="persistence__content-item-background">
-            <div class="persistence__content-items">
-                <h3 class="persistence__content-item-title color-black">
-                    <span class="font-w-700">WYTRWAŁOŚĆ</span>
-                </h3>
-                <p class="persistence__content-item-text">Firmy z tradycjami to fundament stabilnego rynku. W Meritus
-                    Mercatum
-                    doceniamy
-                    przedsiębiorstwa, które od pokoleń pielęgnują wartości przekazywane z rąk do rąk. Ich
-                    doświadczenie
-                    i ciągłość działania budują zaufanie klientów oraz partnerów biznesowych.</p>
+        <div class="quality__list-bottom-menu">
+            <div class="bottom-menu__container-items">
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">WARTOŚCI</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">MATERIAŁY</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="persistence__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
+    </section>
+    <section class="guests">
+        <h2 class="guests__title">LISTA WYRÓŻNIONYCH</h2>
+        <div class="award-list">
+            <div class="award-item">
+                <div class="company-logo">
+                    <img src="img/orlen.png" alt="PKN ORLEN S.A.">
+                </div>
+                <div class="company-info">
+                    <p class="company-name">PKN ORLEN S.A.</p>
+                    <p class="company-location">Warszawa</p>
+                </div>
+                <div class="company-action">
+                    <button class="show-btn">Pokaż</button>
+                </div>
             </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
+            <div class="award-item">
+                <div class="company-logo">
+                    <img src="img/imago-polska.png" alt="Imago-Polska">
+                </div>
+                <div class="company-info">
+                    <p class="company-name">Imago! Polska Sp. zo.o. Sp. K.</p>
+                    <p class="company-location">Rybnik</p>
+                </div>
+                <div class="company-action">
+                    <button class="show-btn">Pokaż</button>
+                </div>
             </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
+            <div class="award-item">
+                <div class="company-logo">
+                    <img src="img/plantia.png" alt="Plantia">
+                </div>
+                <div class="company-info">
+                    <p class="company-name">Plantia</p>
+                    <p class="company-location">Wrocław</p>
+                </div>
+                <div class="company-action">
+                    <button class="show-btn">Pokaż</button>
+                </div>
             </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
+            <div class="award-item-last">
+                <div class="company-logo">
+                    <img src="img/webament.png" alt="Webament">
+                </div>
+                <div class="company-info">
+                    <p class="company-name">Webament.pl</p>
+                    <p class="company-location">Żory</p>
+                </div>
+                <div class="company-action">
+                    <button class="show-btn">Pokaż</button>
+                </div>
             </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="quality">
-    <h2 class="quality__title">WARTOŚCI</h2>
-    <div class="quality__content">
-        <div class="quality__content-logo">
-            <img src="img/old-main-in-glasses-workshop.png" alt="Old Craftsman Working">
-        </div>
-        <div class="quality__content-item-background">
-            <div class="quality__content-items">
-                <h3 class="quality__content-item-title color-black">
-                    <span class="font-w-700">WYSOKA JAKOŚĆ</span>
-                </h3>
-                <p class="quality__content-item-text">Firmy z tradycjami to fundament stabilnego rynku. W Meritus
-                    Mercatum
-                    doceniamy
-                    przedsiębiorstwa, które od pokoleń pielęgnują wartości przekazywane z rąk do rąk. Ich
-                    doświadczenie
-                    i ciągłość działania budują zaufanie klientów oraz partnerów biznesowych.</p>
-            </div>
-        </div>
-    </div>
-    <div class="quality__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
+            <div class="award-item-button">
+                <button class="laureates-btn">Wszyscy laureaci</button>
             </div>
         </div>
-    </div>
-</section>
-<section class="guests">
-    <h2 class="guests__title">LISTA WYRÓŻNIONYCH</h2>
-    <div class="award-list">
-        <div class="award-item">
-            <div class="company-logo">
-                <img src="img/orlen.png" alt="PKN ORLEN S.A.">
-            </div>
-            <div class="company-info">
-                <p class="company-name">PKN ORLEN S.A.</p>
-                <p class="company-location">Warszawa</p>
-            </div>
-            <div class="company-action">
-                <button class="show-btn">Pokaż</button>
-            </div>
-        </div>
-        <div class="award-item">
-            <div class="company-logo">
-                <img src="img/imago-polska.png" alt="Imago-Polska">
-            </div>
-            <div class="company-info">
-                <p class="company-name">Imago! Polska Sp. zo.o. Sp. K.</p>
-                <p class="company-location">Rybnik</p>
-            </div>
-            <div class="company-action">
-                <button class="show-btn">Pokaż</button>
+        <div class="guests__list-bottom-menu">
+            <div class="bottom-menu__container-items">
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">WARTOŚCI</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">MATERIAŁY</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
-        <div class="award-item">
-            <div class="company-logo">
-                <img src="img/plantia.png" alt="Plantia">
-            </div>
-            <div class="company-info">
-                <p class="company-name">Plantia</p>
-                <p class="company-location">Wrocław</p>
-            </div>
-            <div class="company-action">
-                <button class="show-btn">Pokaż</button>
-            </div>
-        </div>
-        <div class="award-item-last">
-            <div class="company-logo">
-                <img src="img/webament.png" alt="Webament">
-            </div>
-            <div class="company-info">
-                <p class="company-name">Webament.pl</p>
-                <p class="company-location">Żory</p>
-            </div>
-            <div class="company-action">
-                <button class="show-btn">Pokaż</button>
-            </div>
-        </div>
-        <div class="award-item-button">
-            <button class="laureates-btn">Wszyscy laureaci</button>
-        </div>
-    </div>
-    <div class="guests__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="statue">
-    <h2 class="statue__title">MATERIAŁY</h2>
-    <div class="trophy-content">
-        <div class="text-section-trophy">
-            <div class="statue-background">
-                <div class="features">
-                    <div class="image-section__mobile">
-                        <img src="img/statue.png" alt="Statuetka">
-                    </div>
-                    <div class="feature-item">
-                        <img src="img/01-icon.png" alt="Mob-01-Icon" class="mob-01">
-                        <div class="feature-text">
-                            <h2>Statuetka</h2>
-                            <p>
-                                Statuetka projektu Meritum Mectus to wyjątkowe wyróżnienie,
-                                które łączy w sobie elegancję i nowoczesne materiały. Wykonana z prasowanej płyty MDF,
-                                z frontem z matowego szkła akrylowego, doskonale wpisuje się w estetykę
-                                minimalistycznego
-                                designu.
-                                W centralnej części znajduje się order projektu, w którym osadzony jest medal
-                                galwanizowany
-                                24-karatowym złotem.
-                                Całość uzupełnia grawerowana tabliczka z nazwą Twojej firmy co nadaje statuetce
-                                indywidualny
-                                charakter.
-                            </p>
+    </section>
+    <section class="statue">
+        <h2 class="statue__title">MATERIAŁY</h2>
+        <div class="trophy-content">
+            <div class="text-section-trophy">
+                <div class="statue-background">
+                    <div class="features">
+                        <div class="image-section__mobile">
+                            <img src="img/statue.png" alt="Statuetka">
                         </div>
-                        <h2 id="statue-top-line" class="statue__title-mobile">STATUETKA</h2>
-                    </div>
-                    <div class="image-section__tablet">
-                        <img src="img/statue.png" alt="Statuetka-tablet">
-                    </div>
-                    <div class="feature-item description-item">
-                        <div class="icon-statue">
-                            <img src="img/24karats.svg" alt="24 Karat Gold Icon">
+                        <div class="feature-item">
+                            <img src="img/01-icon.png" alt="Mob-01-Icon" class="mob-01">
+                            <div class="feature-text">
+                                <h2>Statuetka</h2>
+                                <p>
+                                    Statuetka projektu Meritum Mectus to wyjątkowe wyróżnienie,
+                                    które łączy w sobie elegancję i nowoczesne materiały. Wykonana z prasowanej płyty
+                                    MDF,
+                                    z frontem z matowego szkła akrylowego, doskonale wpisuje się w estetykę
+                                    minimalistycznego
+                                    designu.
+                                    W centralnej części znajduje się order projektu, w którym osadzony jest medal
+                                    galwanizowany
+                                    24-karatowym złotem.
+                                    Całość uzupełnia grawerowana tabliczka z nazwą Twojej firmy co nadaje statuetce
+                                    indywidualny
+                                    charakter.
+                                </p>
+                            </div>
+                            <h2 id="statue-top-line" class="statue__title-mobile">STATUETKA</h2>
                         </div>
-                        <div class="feature-text">
-                            <h3>24 KARATOWE ZŁOTE</h3>
-                            <p>
-                                Centralnym elementem statuetki jest medal, który został pokryty galwanicznie
-                                24-karatowym złotem.
-                                To nie tylko symbol wartości, ale również podkreślenie wyjątkowości i znaczenia
-                                nagrody.
-                                Proces galwanizacji zapewnia trwałość i piękny, lśniący wygląd, nadając statuetce
-                                luksusowy wymiar.
-                            </p>
+                        <div class="image-section__tablet">
+                            <img src="img/statue.png" alt="Statuetka-tablet">
                         </div>
-                    </div>
-                    <div class="feature-item description-item">
-                        <div class="icon-statue">
-                            <img class="icon-second-35" src="img/35cm.svg" alt="35cm Icon">
+                        <div class="feature-item description-item">
+                            <div class="icon-statue">
+                                <img src="img/24karats.svg" alt="24 Karat Gold Icon">
+                            </div>
+                            <div class="feature-text">
+                                <h3>24 KARATOWE ZŁOTE</h3>
+                                <p>
+                                    Centralnym elementem statuetki jest medal, który został pokryty galwanicznie
+                                    24-karatowym złotem.
+                                    To nie tylko symbol wartości, ale również podkreślenie wyjątkowości i znaczenia
+                                    nagrody.
+                                    Proces galwanizacji zapewnia trwałość i piękny, lśniący wygląd, nadając statuetce
+                                    luksusowy wymiar.
+                                </p>
+                            </div>
                         </div>
-                        <div class="feature-text">
-                            <h3>MASYWNE, SOLIDNE WYKONANIE</h3>
-                            <p>
-                                Statuetka wyróżnia się imponującym rozmiarem – ma aż 35 cm wysokości.
-                                Dzięki temu nie tylko przyciąga wzrok, ale również stanowi wyraźny symbol prestiżu i
-                                osiągnięć.
-                                Jej obecność w dowolnym pomieszczeniu natychmiast zwraca uwagę, stając się godną
-                                ekspozycji ozdobą.
-                            </p>
+                        <div class="feature-item description-item">
+                            <div class="icon-statue">
+                                <img class="icon-second-35" src="img/35cm.svg" alt="35cm Icon">
+                            </div>
+                            <div class="feature-text">
+                                <h3>MASYWNE, SOLIDNE WYKONANIE</h3>
+                                <p>
+                                    Statuetka wyróżnia się imponującym rozmiarem – ma aż 35 cm wysokości.
+                                    Dzięki temu nie tylko przyciąga wzrok, ale również stanowi wyraźny symbol prestiżu i
+                                    osiągnięć.
+                                    Jej obecność w dowolnym pomieszczeniu natychmiast zwraca uwagę, stając się godną
+                                    ekspozycji ozdobą.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature-item description-item">
-                        <div class="icon-statue">
-                            <img src="img/individual_company_name.svg" alt="Engraving Lazer Icon">
-                        </div>
-                        <div class="feature-text">
-                            <h3>INDYWIDUALNY GRAWER Z NAZWĄ FIRMY</h3>
-                            <p>
-                                U podstawy statuetki znajduje się tabliczka z wygrawerowaną nazwą Twojej firmy.
-                                Ten indywidualny akcent sprawia, że każda statuetka jest unikalna, a jej właściciel
-                                może z dumą prezentować swoje osiągnięcia.
-                                Grawerowanie wykonane z największą precyzją podkreśla wysoką jakość statuetki.
-                            </p>
+                        <div class="feature-item description-item">
+                            <div class="icon-statue">
+                                <img src="img/individual_company_name.svg" alt="Engraving Lazer Icon">
+                            </div>
+                            <div class="feature-text">
+                                <h3>INDYWIDUALNY GRAWER Z NAZWĄ FIRMY</h3>
+                                <p>
+                                    U podstawy statuetki znajduje się tabliczka z wygrawerowaną nazwą Twojej firmy.
+                                    Ten indywidualny akcent sprawia, że każda statuetka jest unikalna, a jej właściciel
+                                    może z dumą prezentować swoje osiągnięcia.
+                                    Grawerowanie wykonane z największą precyzją podkreśla wysoką jakość statuetki.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="image-section">
+                <img src="img/statue.png" alt="Statuetka">
+            </div>
         </div>
-        <div class="image-section">
-            <img src="img/statue.png" alt="Statuetka">
-        </div>
-    </div>
 
-    <div class="statue__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
+        <div class="statue__list-bottom-menu">
+            <div class="bottom-menu__container-items">
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">WARTOŚCI</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">MATERIAŁY</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="diploma">
-    <h2 class="diploma__title">MATERIAŁY</h2>
-    <div class="diploma-content">
-        <div class="text-section-diploma">
-            <div class="diploma-background">
-                <div class="features">
-                    <div class="image-section__mobile">
-                        <img src="img/diplom.png" alt="Diplom">
-                    </div>
-                    <div class="feature-item">
-                        <img src="img/02-icon.png" alt="Mob-02-Icon" class="mob-02">
-                        <div class="feature-text">
-                            <h2>DYPLOM</h2>
-                            <p>
-                                Dyplom projektu Meritum Mectus to prestiżowe wyróżnienie,
-                                które łączy w sobie elegancję i nowoczesne technologie druku.
-                                Wykonany przy użyciu zaawansowanych technik uszlachetniających,
-                                takich jak srebrna folia 3D i folia smooth touch, dyplom zachwyca nie tylko treścią,
-                                ale również wyjątkowym wykończeniem. Każdy detal podkreśla prestiż i wartość tego
-                                wyróżnienia,
-                                czyniąc go idealną nagrodą dla osób o szczególnych osiągnięciach.
-                            </p>
+    </section>
+    <section class="diploma">
+        <h2 class="diploma__title">MATERIAŁY</h2>
+        <div class="diploma-content">
+            <div class="text-section-diploma">
+                <div class="diploma-background">
+                    <div class="features">
+                        <div class="image-section__mobile">
+                            <img src="img/diplom.png" alt="Diplom">
                         </div>
+                        <div class="feature-item">
+                            <img src="img/02-icon.png" alt="Mob-02-Icon" class="mob-02">
+                            <div class="feature-text">
+                                <h2>DYPLOM</h2>
+                                <p>
+                                    Dyplom projektu Meritum Mectus to prestiżowe wyróżnienie,
+                                    które łączy w sobie elegancję i nowoczesne technologie druku.
+                                    Wykonany przy użyciu zaawansowanych technik uszlachetniających,
+                                    takich jak srebrna folia 3D i folia smooth touch, dyplom zachwyca nie tylko treścią,
+                                    ale również wyjątkowym wykończeniem. Każdy detal podkreśla prestiż i wartość tego
+                                    wyróżnienia,
+                                    czyniąc go idealną nagrodą dla osób o szczególnych osiągnięciach.
+                                </p>
+                            </div>
                             <h2 id="diploma-top-line" class="diploma__title-mobile">DYPLOM</h2>
-                    </div>
-                    <div class="image-section__tablet image-section__tablet-diploma">
-                        <img src="img/diplom.png" alt="Diplom-tablet">
-                    </div>
-                    <div class="feature-item description-item">
-                        <div class="icon-diploma">
-                            <img src="img/hq_print.svg" alt="Star Icon">
                         </div>
-                        <div class="feature-text">
-                            <h3>Druk z uszlachetnieniami </h3>
-                            <p>Dyplom wyróżnia się zastosowaniem wielu technik uszlachetniania druku,
-                                które nadają mu wyjątkowy wygląd. Srebrna folia 3D podkreśla kluczowe elementy
-                                projektu, nadając im elegancki,
-                                połyskujący akcent. Dodatkowo folia smooth touch zapewnia subtelne,
-                                jedwabiste wykończenie, które jest przyjemne w dotyku i wzbogaca doświadczenie
-                                odbioru dyplomu.
-                            </p>
+                        <div class="image-section__tablet image-section__tablet-diploma">
+                            <img src="img/diplom.png" alt="Diplom-tablet">
                         </div>
-                    </div>
+                        <div class="feature-item description-item">
+                            <div class="icon-diploma">
+                                <img src="img/hq_print.svg" alt="Star Icon">
+                            </div>
+                            <div class="feature-text">
+                                <h3>Druk z uszlachetnieniami </h3>
+                                <p>Dyplom wyróżnia się zastosowaniem wielu technik uszlachetniania druku,
+                                    które nadają mu wyjątkowy wygląd. Srebrna folia 3D podkreśla kluczowe elementy
+                                    projektu, nadając im elegancki,
+                                    połyskujący akcent. Dodatkowo folia smooth touch zapewnia subtelne,
+                                    jedwabiste wykończenie, które jest przyjemne w dotyku i wzbogaca doświadczenie
+                                    odbioru dyplomu.
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="feature-item description-item">
-                        <div class="icon-diploma">
-                            <img src="img/a4_frame.svg" alt="A4 Frame">
+                        <div class="feature-item description-item">
+                            <div class="icon-diploma">
+                                <img src="img/a4_frame.svg" alt="A4 Frame">
+                            </div>
+                            <div class="feature-text">
+                                <h3>Elegancka rama</h3>
+                                <p>
+                                    Dyplom został oprawiony w elegancką, czarną ramę w formacie A4+.
+                                    Wykończenie to nadaje mu klasyczny wygląd, jednocześnie chroniąc druk przed
+                                    uszkodzeniami.
+                                    Dzięki ramie, dyplom od razu jest gotowy do ekspozycji, stanowiąc stylową ozdobę
+                                    biura, gabinetu lub domu.
+                                </p>
+                            </div>
                         </div>
-                        <div class="feature-text">
-                            <h3>Elegancka rama</h3>
-                            <p>
-                                Dyplom został oprawiony w elegancką, czarną ramę w formacie A4+.
-                                Wykończenie to nadaje mu klasyczny wygląd, jednocześnie chroniąc druk przed
-                                uszkodzeniami.
-                                Dzięki ramie, dyplom od razu jest gotowy do ekspozycji, stanowiąc stylową ozdobę
-                                biura, gabinetu lub domu.
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="feature-item description-item">
-                        <div class="icon-diploma">
-                            <img src="img/individual_company_name.svg" alt="Engraving icon">
-                        </div>
-                        <div class="feature-text">
-                            <h3>INDYWIDUALNY GRAWER Z NAZWĄ FIRMY</h3>
-                            <p>
-                                Podkreślając indywidualność i wyjątkowość każdego wyróżnienia, dyplom zawiera grawer
-                                z nazwą Twojej firmy.
-                                Ten personalizowany element dodaje dyplomowi charakteru i sprawia, że nagroda jest
-                                niepowtarzalna,
-                                pozostając trwałą pamiątką sukcesów i osiągnięć.
-                            </p>
+                        <div class="feature-item description-item">
+                            <div class="icon-diploma">
+                                <img src="img/individual_company_name.svg" alt="Engraving icon">
+                            </div>
+                            <div class="feature-text">
+                                <h3>INDYWIDUALNY GRAWER Z NAZWĄ FIRMY</h3>
+                                <p>
+                                    Podkreślając indywidualność i wyjątkowość każdego wyróżnienia, dyplom zawiera grawer
+                                    z nazwą Twojej firmy.
+                                    Ten personalizowany element dodaje dyplomowi charakteru i sprawia, że nagroda jest
+                                    niepowtarzalna,
+                                    pozostając trwałą pamiątką sukcesów i osiągnięć.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="image-section">
-            <img src="img/diplom.png" alt="Diplom">
-        </div>
-    </div>
-    <div class="diploma__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
+            <div class="image-section">
+                <img src="img/diplom.png" alt="Diplom">
             </div>
         </div>
-    </div>
-</section>
-<section id="contact-form" class="contact">
-    <h2 class="contact__title">DOŁĄCZ</h2>
-    <div class="content-contact">
-        <div class="left-section">
-            <div class="contact-logo">
-                <img src="img/potters-workshop.png" alt="Potters Workshop">
-            </div>
-            <div class="text-section-contact">
-                <h3>Dołącz do grona prestiżowych firm</h3>
-                <p>Dołącz do grona prestiżowych firm, które budują swoją pozycję z Meritus Mercatum! Wypełnij krótki
-                    formularz, aby otrzymać nasze unikalne materiały i dowiedzieć się, jak możemy pomóc w umocnieniu
-                    wizerunku Twojej marki. Dzięki nam podkreślisz swoje doświadczenie i zaufanie w branży. Nie zwlekaj
-                    – wypełnij formularz i odkryj korzyści płynące ze współpracy z Meritus Mercatum!</p>
+        <div class="diploma__list-bottom-menu">
+            <div class="bottom-menu__container-items">
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">WARTOŚCI</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">MATERIAŁY</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
+    </section>
+    <section id="contact-form" class="contact">
+        <h2 class="contact__title">DOŁĄCZ</h2>
+        <div class="content-contact">
+            <div class="left-section">
+                <div class="contact-logo">
+                    <img src="img/potters-workshop.png" alt="Potters Workshop">
+                </div>
+                <div class="text-section-contact">
+                    <h3>Dołącz do grona prestiżowych firm</h3>
+                    <p>Dołącz do grona prestiżowych firm, które budują swoją pozycję z Meritus Mercatum! Wypełnij krótki
+                        formularz, aby otrzymać nasze unikalne materiały i dowiedzieć się, jak możemy pomóc w umocnieniu
+                        wizerunku Twojej marki. Dzięki nam podkreślisz swoje doświadczenie i zaufanie w branży. Nie
+                        zwlekaj
+                        – wypełnij formularz i odkryj korzyści płynące ze współpracy z Meritus Mercatum!</p>
+                </div>
+            </div>
 
-        <div class="right-section">
-            <div class="form-container">
-                <p class="highlight">Twoja firma istnieje co najmniej 5 lat na rynku?<br><span
-                        class="font-w-700 color-black">Możesz dołączyć do
+            <div class="right-section">
+                <div class="form-container">
+                    <p class="highlight">Twoja firma istnieje co najmniej 5 lat na rynku?<br><span
+                            class="font-w-700 color-black">Możesz dołączyć do
                     projektu!</span></p>
-                <form action="/submit" method="post" class="contact-us__form">
-                    <input type="text" name="company_name" class="contact-us__form-input" placeholder="Nazwa firmy">
-                    <input type="tel" name="phone_number" class="contact-us__form-input" placeholder="Numer telefonu">
-                    <button type="submit" class="contact-us__form-submit">Wyślij</button>
-                </form>
-                <div class="security-info">
-                    <img src="img/security.png" alt="Security Icon">
-                    <p>Strona jest zabezpieczona certyfikatem bezpieczeństwa a połączenie jest szyfrowane.</p>
+                    <form action="/submit" method="post" class="contact-us__form">
+                        <input type="text" name="company_name" class="contact-us__form-input" placeholder="Nazwa firmy">
+                        <input type="tel" name="phone_number" class="contact-us__form-input"
+                               placeholder="Numer telefonu">
+                        <button type="submit" class="contact-us__form-submit">Wyślij</button>
+                    </form>
+                    <div class="security-info">
+                        <img src="img/security.png" alt="Security Icon">
+                        <p>Strona jest zabezpieczona certyfikatem bezpieczeństwa a połączenie jest szyfrowane.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="contact__list-bottom-menu">
-        <div class="bottom-menu__container-items">
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">O WYROŻNIENIU</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">WARTOŚCI</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">LISTA WYROŻNIONYCH</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">MATERIAŁY</p>
-                <div class="line"></div>
-            </div>
-            <div class="bottom-menu__container-item">
-                <p class="bottom-text">ZGŁOŚ SIĘ</p>
-                <div class="line"></div>
+        <div class="contact__list-bottom-menu">
+            <div class="bottom-menu__container-items">
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">WARTOŚCI</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">MATERIAŁY</p>
+                    <div class="line"></div>
+                </div>
+                <div class="bottom-menu__container-item">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </div>
-
+<!--<script src="dist/bundle.js"></script>-->
 <script src="js/desktop-menu.js"></script>
 <script src="js/turnoff-scroll.js"></script>
 <script src="js/scroll.js"></script>

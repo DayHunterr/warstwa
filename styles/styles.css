@@ -14,20 +14,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFF;
+    overflow-x: hidden;
 }
 
-.snap-container {
-    overflow-x: scroll;
-    scroll-snap-type: y mandatory;
-    height: 100vh; /* Или необходимая высота */
+html{
     scroll-behavior: smooth;
 }
 
-.snap-container section {
-    scroll-snap-align: start;
-    /*height: 100vh; !* Чтобы секция занимала весь экран *!*/
+.snap-container {
+    overflow-y: scroll;
+    height: 100%;
 }
-
 
 .nav_mobile {
     display: none;
@@ -319,7 +316,7 @@ hr {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 150px;
-    margin-top: 120px;
+    margin-top: 105px;
     white-space: nowrap;
     border-bottom: 1px solid;
     border-bottom-color: black;
@@ -332,7 +329,7 @@ hr {
 
 .guests h2 {
     width: 84%;
-    margin: 8% 10% 6% 8.2%;
+    margin: 0 10% 6% 8.2%;
 }
 
 .statue h2 {
@@ -347,7 +344,7 @@ hr {
 
 .contact h2 {
     width: 88%;
-    margin: 10% 10% 1% 9.5%;
+    margin: 0 10% 1% 9.5%;
 }
 
 .benefits {
@@ -359,7 +356,7 @@ hr {
 }
 
 .recognition {
-    padding-top: 90px;
+    padding-top: 0;
 }
 
 .tradition, .persistence, .quality {
@@ -1111,31 +1108,40 @@ hr {
 }
 
 .benefits__list-bottom-menu, .recognition__list-bottom-menu {
-    margin-top: 175px;
+    margin-top: 80px;
+    padding: 10% 10% 0 5%;
 }
 
-.tradition__list-bottom-menu, .persistence__list-bottom-menu {
-    padding: 15% 10% 0 10%;
+.recognition__list-bottom-menu {
+    padding: 5% 10% 0 8%;
+}
+
+.tradition__list-bottom-menu {
+    padding: 15% 10% 0 9%;
+}
+
+.persistence__list-bottom-menu {
+    padding: 18% 10% 50px 9%;
 }
 
 .quality__list-bottom-menu {
-    padding: 15% 10% 5% 10%;
+    padding: 17% 10% 5% 9%;
 }
 
 .guests__list-bottom-menu {
-    padding: 10% 10% 5% 10%;
+    padding: 5% 10% 12% 5%;
 }
 
 .statue__list-bottom-menu {
-    padding: 35px 10% 35px 9%;
+    padding: 100px 10% 35px 9%;
 }
 
 .diploma__list-bottom-menu {
-    padding: 3% 10% 3% 8.5%;
+    padding: 5% 10% 10% 10%;
 }
 
 .contact__list-bottom-menu {
-    padding: 3% 10% 3% 9.5%;
+    padding: 3% 10% 3% 4%;
 }
 
 .bottom-menu__container-items {
