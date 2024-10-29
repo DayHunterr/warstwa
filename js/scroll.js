@@ -3,7 +3,7 @@ $(function() {
     $('#snap-container').pageScroller({
         // Set configuration options here
         travelTime: 1000,           // Animation speed in milliseconds
-        afterTravelTimeout: 1,       // Delay in seconds
+        afterTravelTimeout: 0,       // Delay in seconds
         travelEasing: 'swing',       // Easing function
 
     });
