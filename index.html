@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="styles/global.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--    <script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+<!--    <script src="node_modules/jquery-touchswipe/jquery.touchSwipe.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script> ???-->
+<!--    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>???-->
 </head>
 <body>
     <div class="main__sidebar">
         <div class="main__sidebar-top">
             <div class="main__top-icon">
-                <img src="img/meritus_mercatum_main_hu.png" alt="Logo">
+                <a href="#main">
+                    <img src="img/meritus_mercatum_main_hu.png" alt="Logo">
+                </a>
             </div>
             <div class="main__top-line-container" onclick="toggleMenu()">
                 <div class="line-main"></div>
@@ -50,7 +51,7 @@
             <button class="action-btn font-w-700">ZGŁOŚ SIĘ</button>
         </div>
     </div>
-    <div class="snap-container">
+    <div id="snap-container" class="snap-container">
         <div class="mob__side-menu">
             <div class="bottom-menu__container-items">
                 <div class="bottom-menu__container-item">
@@ -75,7 +76,7 @@
                 </div>
             </div>
         </div>
-    <section class="main">
+    <section id="main" class="main">
         <div class="nav_mobile">
             <div class="nav_mobile__logo">
                 <a href="#" class="nav_mobile__logo-link">
@@ -924,6 +925,12 @@
 <!--<script src="dist/bundle.js"></script>-->
 <script src="js/desktop-menu.js"></script>
 <script src="js/turnoff-scroll.js"></script>
-<script src="js/scroll.js"></script>
+<script type="module" src="js/scroll.js"></script>
+<!--<script>-->
+<!--    $(function(){-->
+<!--        $('#container').pageScroller();-->
+<!--    });-->
+
+<!--</script>-->
 </body>
 </html>

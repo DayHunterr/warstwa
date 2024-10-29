@@ -1652,6 +1652,11 @@ hr {
 }
 
 @media (max-width: 767px) {
+
+    .main {
+        z-index: 100;
+    }
+
     .main__sidebar {
         display: none
     }
@@ -1663,7 +1668,7 @@ hr {
         left: -44%;
         width: 100%;
         height: 100%;
-        z-index: 90;
+        z-index: 89;
         transform: translateY(0);
     }
 
@@ -1681,6 +1686,21 @@ hr {
     .bottom-menu__container-item {
         row-gap: 3px;
     }
+
+    .bottom-menu__container-item:first-child {
+        position: relative;
+        bottom: 6px;
+
+
+    }
+
+    /* Стиль только для первого элемента <p> с классом .bottom-text */
+    .bottom-menu__container-item:first-child .bottom-text {
+        border-radius:   0 0 5px 5px ;
+        background: #85644E;
+        padding: 6% 0;
+    }
+
 
     #statue-top-line {
         display: block;
@@ -1851,12 +1871,16 @@ hr {
         padding: 0;
         max-width: 100%;
         overflow: hidden;
+        position: relative;
+        z-index: 101;
     }
 
     .guests {
         padding-top: 50px;
         margin: 0;
         overflow: hidden;
+        position: relative;
+        z-index: 88;
     }
 
     .contact {
