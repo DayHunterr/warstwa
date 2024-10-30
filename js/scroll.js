@@ -5,6 +5,7 @@ $(function () {
         travelEasing: 'swing',       // Easing function
         afterTravelTimeout: 0.1,
         // anchors:['.benefits','.recognition','.tradition','.persistence','.quality','.guests','.statue','.diploma','.contact'],
+        // scrollableClasses: '.diploma, .statue, .recognition',
         onTrigger: function () {
             isScrolling = true;            // Блокируем дальнейший скролл
             setTimeout(() => {

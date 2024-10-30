@@ -24,32 +24,70 @@ $.fn.wheel = function (callback) {
                 travelEasing:'swing',
                 startingPage:0,
                 anchors:[],
+                scrollableClasses: 'section',
                 onTrigger : function(none, targets) {},
                 onEnd : function(none, targets) {}
             };
 
             var settings = $.extend({}, this.defaultOptions, options);
+            // Добавляем стили для скрытия скроллбара
+            const styles = `
+                <style>
+                    ${settings.scrollableClasses} {
+                        overflow-y: auto; /* Позволяет вертикальную прокрутку */
+                        -ms-overflow-style: none;  /* Internet Explorer */
+                        scrollbar-width: none; /* Firefox */
+                    }
+                    /*
+                    ${settings.scrollableClasses}::-webkit-scrollbar {
+                        display: none; /* Скрыть скроллбар для WebKit-браузеров */
+                    }
+                    */
+                </style>
+            `;
+            $('head').append(styles); // Добавляем стили в <head>
 
             return this.each(function() {
                 var $this = $(this);
                 var cleared = true;
-        
-        //        INIT
+
+                //        INIT
                 $this.children().eq(settings.startingPage).addClass('current');
                 $('body').css('overflow','hidden');
                 $(window).scrollTop($this.children().eq(settings.startingPage).offset().top);
-                
+
                 $('body').scroll(function(e){
                     e.preventDefault();
                 })
-                
+
                 $(window).on('beforeunload', function() {
-                   $(window).scrollTop(0);
+                    $(window).scrollTop(0);
                 });
 
                 $('body').wheel(function (e) {
 
-            //        SCROLL DOWN
+                    // Проверка, находится ли событие прокрутки внутри секции с прокруткой
+                    if ($(e.target).closest(settings.scrollableClasses).length) {
+                        const target = $(e.target).closest(settings.scrollableClasses)[0];
+
+                        // Определяем, можно ли прокручивать внутри секции
+                        const scrollTop = target.scrollTop;
+                        const scrollHeight = target.scrollHeight;
+                        const offsetHeight = target.offsetHeight;
+
+                        if (e.delta > 0) {
+                            // Прокрутка вниз
+                            if (scrollTop + offsetHeight < scrollHeight) {
+                                return; // Прокрутка внутри секции
+                            }
+                        } else {
+                            // Прокрутка вверх
+                            if (scrollTop > 0) {
+                                return; // Прокрутка внутри секции
+                            }
+                        }
+                    }
+                    //        SCROLL DOWN
                     if(cleared){
                         if(e.delta > 0){
                             if($('.current',$this).next().length > 0){
@@ -70,7 +108,7 @@ $.fn.wheel = function (callback) {
                                 }, settings.travelTime);
                             }
                         }
-                //        SCROLL UP
+                        //        SCROLL UP
                         else{
                             if($('.current',$this).prev().length > 0){
                                 cleared = false;
@@ -92,7 +130,7 @@ $.fn.wheel = function (callback) {
                         }
                     }
                 });
-                
+
 //                MOBILE HANDLER
                 $("body").swipe({
                     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -140,7 +178,7 @@ $.fn.wheel = function (callback) {
                         }
                     }
                 });
-                
+
 //                ANCHORS HANDLER
                 if(settings.anchors.length>=$this.children().length){
                     $this.children().each(function(i){

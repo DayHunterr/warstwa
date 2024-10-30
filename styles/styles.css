@@ -17,6 +17,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    height: 100vh;
+}
+
 .nav_mobile {
     display: none;
 }
