@@ -17,13 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-.snap-container {
-}
-
 .nav_mobile {
     display: none;
 }

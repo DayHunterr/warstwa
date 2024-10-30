@@ -1,11 +1,11 @@
 let isScrolling = false;
-$(function() {
+$(function () {
     $('#snap-container').pageScroller({
         travelTime: 1000,           // Animation speed in milliseconds
         travelEasing: 'swing',       // Easing function
         afterTravelTimeout: 0.1,
         // anchors:['.benefits','.recognition','.tradition','.persistence','.quality','.guests','.statue','.diploma','.contact'],
-        onTrigger: function() {
+        onTrigger: function () {
             isScrolling = true;            // Блокируем дальнейший скролл
             setTimeout(() => {
                 isScrolling = false;         // Разблокируем скролл после завершения анимации
@@ -25,7 +25,7 @@ $(function() {
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault(); // Отменить стандартное поведение
 
         const targetId = this.getAttribute('href');
