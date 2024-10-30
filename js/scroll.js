@@ -1,13 +1,28 @@
+let isScrolling = false;
+$(function() {
+    $('#snap-container').pageScroller({
+        travelTime: 1000,           // Animation speed in milliseconds
+        travelEasing: 'swing',       // Easing function
+        afterTravelTimeout: 0.1,
+        // anchors:['.benefits','.recognition','.tradition','.persistence','.quality','.guests','.statue','.diploma','.contact'],
+        onTrigger: function() {
+            isScrolling = true;            // Блокируем дальнейший скролл
+            setTimeout(() => {
+                isScrolling = false;         // Разблокируем скролл после завершения анимации
+            }, 1000);                      // Задержка на время анимации
+        }
 
-// $(function() {
-//     $('#snap-container').pageScroller({
-//         // Set configuration options here
-//         travelTime: 1000,           // Animation speed in milliseconds
-//         afterTravelTimeout: 0,       // Delay in seconds
-//         travelEasing: 'swing',       // Easing function
-//
-//     });
-// });
+
+    });
+
+    window.addEventListener('wheel', function(e) {
+        if (isScrolling) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+});
+
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

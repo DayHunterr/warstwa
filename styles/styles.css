@@ -22,7 +22,6 @@ html{
 }
 
 .snap-container {
-    height: 100%;
 }
 
 .nav_mobile {
@@ -311,6 +310,10 @@ hr {
     border-bottom-color: black;
     height: 45px;
 }
+
+/*section {*/
+/*    height: 100vh;*/
+/*}*/
 
 .section-title {
     width: 100%;
