@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laureat Konkursu</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/company-profile.css" type="text/css">
+    <link rel="stylesheet" href="styles/global.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main__sidebar">
+    <div class="main__sidebar-top">
+        <div class="main__top-icon">
+            <a href="/index.html">
+                <img src="img/meritus_mercatum_main_hu.png" alt="Logo">
+            </a>
+        </div>
+        <div class="main__top-line-container" onclick="toggleMenu()">
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="main__sidebar-bottom">
+        <a class="main__bottom-text" href="#contact-form">
+            <span class="font-w-800">Zgłoś się</span>
+            <span>do projektu</span>
+        </a>
+    </div>
+</div>
+<div class="nav_mobile">
+    <div id="mob_menu">
+        <input id="menu__toggle" type="checkbox" data-nav-target="mobMenuTrigger">
+        <label class="menu__btn" for="menu__toggle" data-action="click->nav#onShowMobileMenu">
+            <span></span>
+        </label>
+        <div id="mob-items">
+            <div class="mob-nav-item">
+                <a href="#">Balíček materiálov</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Wartości</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Lista wyróżnionych</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Materiały</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Regulamin</a>
+            </div>
+            <div class="mob-nav-btn">
+                <a href="#">zgłoś sIę</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main__side-menu" id="sideMenu">
+    <ul class="main__menu-items">
+        <li><a class="font-w-400" href="#">O Wyróżnieniu</a></li>
+        <li><a class="font-w-400" href="#">Wartości</a></li>
+        <li><a class="font-w-400" href="#">Lista Wyróżnionych</a></li>
+        <li><a class="font-w-400" href="#">Materiały</a></li>
+        <li><a class="font-w-400" href="#">Regulamin</a></li>
+    </ul>
+    <div class="side__bottom-button">
+        <button class="action-btn font-w-700">ZGŁOŚ SIĘ</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="section-title__profile-main font-w-700">Laureat Konkursu</h1>
+
+    <div class="content">
+        <div class="text-content">
+            <h2 class="font-w-500">PKN ORLEN S. A.</h2>
+            <p class="address">Warszawa, Aleje Ujazdowskie 441/23</p>
+
+            <div class="awards">
+                <div class="award-item">
+                    <img src="img/merirus-mercarum-icon-profile.svg" alt="Award 2023">
+                    <p>2023</p>
+                </div>
+                <div class="award-item">
+                    <img src="img/merirus-mercarum-icon-profile.svg" alt="Award 2024">
+                    <p>2024</p>
+                </div>
+                <div class="award-item">
+                    <img src="img/merirus-mercarum-icon-profile.svg" alt="Award 2025">
+                    <p>2025</p>
+                </div>
+            </div>
+
+            <div class="profile__description">
+                <h3 class="highlight-text font-w-400 color-light-brown">
+                    Powyższa firma <span class="font-w-700">jest laureatem Meritus Mercatum</span>
+                </h3>
+                <p class="description font-w-500">
+                    <span class="font-w-800">Meritus Mercatum</span> to prestiżowy projekt skierowany do firm, które od
+                    lat z powodzeniem budują swoją markę i pozycję na rynku. Naszą misją jest wsparcie przedsiębiorstw z
+                    wieloletnią tradycją, pomagając im umocnić wizerunek jako stabilnych, godnych zaufania partnerów
+                    biznesowych. Uznajemy doświadczenie, solidność oraz ciągłość działań, które przyczyniają się do
+                    sukcesów tych firm.
+                </p>
+                <a href="#" class="button font-w-700">Więcej o projekcie</a>
+            </div>
+        </div>
+
+        <div class="image-content">
+            <img src="img/statue-in-company-profile.png" alt="Award Image">
+        </div>
+    </div>
+
+    <div class="profile__list-bottom-menu">
+        <div class="bottom-menu__container-items">
+            <div class="bottom-menu__container-item">
+                <a href="#benefits">
+                    <p class="bottom-text">O WYROŻNIENIU</p>
+                </a>
+                <div class="line"></div>
+            </div>
+            <div class="bottom-menu__container-item">
+                <a href="#tradition">
+                    <p class="bottom-text">WARTOŚCI</p>
+                </a>
+                <div class="line"></div>
+            </div>
+            <div class="bottom-menu__container-item">
+                <a href="#guests">
+                    <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+                </a>
+                <div class="line"></div>
+            </div>
+            <div class="bottom-menu__container-item">
+                <a href="#statue">
+                    <p class="bottom-text">MATERIAŁY</p>
+                </a>
+
+                <div class="line"></div>
+            </div>
+            <div class="bottom-menu__container-item">
+                <a href="#contact-form">
+                    <p class="bottom-text">ZGŁOŚ SIĘ</p>
+                </a>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/desktop-menu.js"></script>
+<script src="js/turnoff-scroll.js"></script>
+</body>
+</html>
