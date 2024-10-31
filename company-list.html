@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of companies</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/company-list.css" type="text/css">
+    <link rel="stylesheet" href="styles/global.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main__sidebar">
+    <div class="main__sidebar-top">
+        <div class="main__top-icon">
+            <a href="/index.html">
+                <img src="img/meritus_mercatum_main_hu.png" alt="Logo">
+            </a>
+        </div>
+        <div class="main__top-line-container" onclick="toggleMenu()">
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+            <div class="line-main"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="main__sidebar-bottom">
+        <a class="main__bottom-text" href="#contact-form">
+            <span class="font-w-800">Zgłoś się</span>
+            <span>do projektu</span>
+        </a>
+    </div>
+</div>
+<div class="nav_mobile">
+    <div id="mob_menu">
+        <input id="menu__toggle" type="checkbox" data-nav-target="mobMenuTrigger">
+        <label class="menu__btn" for="menu__toggle" data-action="click->nav#onShowMobileMenu">
+            <span></span>
+        </label>
+        <div id="mob-items">
+            <div class="mob-nav-item">
+                <a href="#">Balíček materiálov</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Wartości</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Lista wyróżnionych</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Materiały</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Regulamin</a>
+            </div>
+            <div class="mob-nav-btn">
+                <a href="#">zgłoś sIę</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main__side-menu" id="sideMenu">
+    <ul class="main__menu-items">
+        <li><a class="font-w-400" href="#">O Wyróżnieniu</a></li>
+        <li><a class="font-w-400" href="#">Wartości</a></li>
+        <li><a class="font-w-400" href="#">Lista Wyróżnionych</a></li>
+        <li><a class="font-w-400" href="#">Materiały</a></li>
+        <li><a class="font-w-400" href="#">Regulamin</a></li>
+    </ul>
+    <div class="side__bottom-button">
+        <button class="action-btn font-w-700">ZGŁOŚ SIĘ</button>
+    </div>
+</div>
+<div class="mob__side-menu">
+    <div class="bottom-menu__container-items">
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">ZGŁOŚ SIĘ</p>
+            <div class="line"></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">MATERIAŁY</p>
+            <div class="line"></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+            <div class="line"></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">WARTOŚCI</p>
+            <div class="line"></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">O WYROŻNIENIU</p>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2 class="section-title__list-main font-w-700">LISTA WYRÓŻNIONYCH</h2>
+    <div class="award-list">
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+        <div class="award-item">
+            <div class="company-info">
+                <p class="company-name">PKN ORLEN S.A.</p>
+                <p class="company-location">Warszawa</p>
+            </div>
+            <div class="company-action">
+                <button class="show-btn">Pokaż</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/desktop-menu.js"></script>
+<script src="js/change-color.js"></script>
+<script src="js/turnoff-scroll.js"></script>
+</html>
