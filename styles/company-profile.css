@@ -132,10 +132,69 @@
     left: 0;
 }
 
-.profile__list-bottom-menu {
-    padding: 5% 0 5% 0;
+.image-content-mob {
+    display: none;
 }
 
 .bottom-menu__container-items {
     justify-content: center;
+}
+
+.nav_mobile {
+    justify-content: flex-end;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background-color: black;
+}
+
+@media (max-width: 911px) {
+    .button {
+        padding: 17px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        padding: 5vw 5vw 0 13vw;
+    }
+
+    .text-content h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .address {
+        font-size: 12px;
+    }
+
+    .highlight-text {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .image-content {
+        display: none;
+    }
+
+    .image-content-mob {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(138, 131, 124, 0.08) 0%, rgba(240, 240, 240, 0.40) 100%);
+    }
+
+    .section-title__profile-main {
+        display: none;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
 }
