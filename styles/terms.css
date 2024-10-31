@@ -71,6 +71,14 @@ body{
     margin-bottom: 10px;
 }
 
+.nav_mobile {
+    justify-content: flex-end;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background-color: black;
+}
+
 @media (max-width: 767px) {
     .container {
         padding: 0 0 0 14vw;
@@ -81,26 +89,15 @@ body{
         padding:0 4% 0 0
     }
 
-    .section-title_terms-main{
-        /*margin-left: 10%;*/
+    .section-title_terms-main {
+        margin-bottom: 80px;
+        margin-top: 80px;
+        width: 90%;
+        margin-left: 10%;
     }
 
-    .menu__btn > span, .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
-        background-color: #000;
-    }
-
-    #menu__toggle:checked ~ #mob-items{
-        right: 35px;
-    }
-
-    .menu__btn > span {
-        top: 10px;
-        left: 20px;
-        background-color: #000;
-    }
-
-    #menu__toggle:checked ~ .menu__btn > span{
-        color: white;
+    .ection-title-terms__title-second {
+        margin-bottom: 10px;
     }
 
 }
