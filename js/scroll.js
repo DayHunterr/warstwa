@@ -1,41 +1,47 @@
 let isScrolling = false;
-$(function () {
-    $('#snap-container').pageScroller({
-        travelTime: 1000,           // Animation speed in milliseconds
-        travelEasing: 'swing',       // Easing function
-        afterTravelTimeout: 0.1,
-        // anchors:['.benefits','.recognition','.tradition','.persistence','.quality','.guests','.statue','.diploma','.contact'],
-        // scrollableClasses: '.diploma, .statue, .recognition',
-        onTrigger: function () {
-            isScrolling = true;            // Блокируем дальнейший скролл
-            setTimeout(() => {
-                isScrolling = false;         // Разблокируем скролл после завершения анимации
-            }, 1000);                      // Задержка на время анимации
-        }
 
+$(document).ready(function () {
+    $('#snap-container').pageScroller({
+        travelTime: 1000,
+        afterTravelTimeout: 0.1,
+        travelEasing: 'swing',
+        onTrigger: function () {
+            isScrolling = true;
+            setTimeout(() => {
+                isScrolling = false;
+            }, 1000);
+        },
 
     });
 
-    window.addEventListener('wheel', function(e) {
+    // Обработчик для кликов по якорям
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        $(anchor).click(function (e) {
+            e.preventDefault(); // Отменяем стандартное поведение ссылки
+
+            const targetId = $(this).attr('href');
+            const $targetElement = $(targetId);
+            console.log($targetElement)
+            if ($targetElement.length && !isScrolling) {
+                const $currentElement = $('.current', $('#snap-container'));
+                if (!$targetElement.is($currentElement)) {
+                    isScrolling = true;
+                    $currentElement.removeClass('current');
+                    $targetElement.addClass('current');
+
+                    $('html, body').animate({
+                        scrollTop: $targetElement.offset().top
+                    }, 1000, 'swing', function () {
+                        isScrolling = false;
+                    });
+                }
+            }
+        });
+    });
+
+    window.addEventListener('wheel', function (e) {
         if (isScrolling) {
             e.preventDefault();
         }
-    }, { passive: false });
-});
-
-
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault(); // Отменить стандартное поведение
-
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
+    }, {passive: false});
 });

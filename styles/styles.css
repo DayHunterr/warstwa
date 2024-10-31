@@ -1869,7 +1869,6 @@ hr {
         margin: 0 0 0 13%;
         padding: 0;
         max-width: 100%;
-        overflow: hidden;
         position: relative;
         z-index: 101;
     }
