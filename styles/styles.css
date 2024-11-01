@@ -1795,22 +1795,22 @@ hr {
     .bottom-menu__container-item:last-child {
         position: relative;
         bottom: 6px;
-        padding-top: 6px;
+        padding-top: 12px;
     }
 
     .bottom-menu__container-item:last-child .bottom-text {
         border-radius: 0 0 5px 5px ;
-        padding-bottom: 6px;
+        padding-bottom: 0;
     }
 
     .bottom-menu__container-item:last-child .bottom-text::before {
         content: '';
         position: absolute;
-        top: -50%;
+        top: -192%;
         left: 50%;
         transform: translateX(-50%);
-        width: 80%;
-        height: 125%;
+        width: 91%;
+        height: 312%;
         background: #85644E;
         z-index: -1;
         border-radius: 0 0 5px 5px;
