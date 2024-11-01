@@ -1763,23 +1763,27 @@ hr {
     .mob__side-menu {
         display: flex;
         position: fixed;
-        top: calc(20vh - 150px);
-        left: -44%;
-        width: 100%;
-        height: 100%;
+        top: 0;
+        left: 0;
+        width: 13%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         z-index: 89;
-        transform: translateY(0);
     }
 
     .bottom-menu__container-items{
+        justify-content: center;
         transform: rotate(-90deg);
         height: 100%;
         width: 100vw;
-        column-gap: 3px;
+        column-gap: 10px;
     }
 
     .bottom-text {
         font-size: 14px ;
+        padding: 0 10px 0 10px;
     }
 
     .bottom-menu__container-item {
@@ -1789,15 +1793,25 @@ hr {
     .bottom-menu__container-item:first-child {
         position: relative;
         bottom: 6px;
-
-
+        padding-top: 6px;
     }
 
-    /* Стиль только для первого элемента <p> с классом .bottom-text */
     .bottom-menu__container-item:first-child .bottom-text {
-        border-radius:   0 0 5px 5px ;
+        border-radius: 0 0 5px 5px ;
+        padding-bottom: 6px;
+    }
+
+    .bottom-menu__container-item:first-child .bottom-text::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 125%;
         background: #85644E;
-        padding: 6% 0;
+        z-index: -1;
+        border-radius: 0 0 5px 5px;
     }
 
 
