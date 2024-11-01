@@ -44,9 +44,9 @@
         background-color: black;
     }
 
-    .menu__btn .color-toggle > span,
-    .menu__btn .color-toggle > span::before,
-    .menu__btn .color-toggle > span::after {
+    #menu__toggle:checked ~ .menu__btn > span,
+    #menu__toggle:checked ~ .menu__btn > span::before,
+    #menu__toggle:checked ~ .menu__btn > span::after {
         background-color: white;
     }
 

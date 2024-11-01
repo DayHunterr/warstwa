@@ -148,6 +148,22 @@
     background-color: black;
 }
 
+#menu__toggle:checked ~ .menu__btn > span,
+#menu__toggle:checked ~ .menu__btn > span::before,
+#menu__toggle:checked ~ .menu__btn > span::after {
+    background-color: white;
+}
+
+.profile__list-bottom-menu {
+    padding: 50px 0 ;
+}
+
+@media (max-width: 1200px) {
+    .profile__list-bottom-menu {
+        padding: 50px 0 ;
+    }
+}
+
 @media (max-width: 911px) {
     .button {
         padding: 17px 30px;
@@ -179,6 +195,17 @@
         font-size: 12px;
     }
 
+    .profile__description-button {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 30px 0;
+    }
+
+    .button {
+        padding: 15px 30%;
+    }
+
     .image-content {
         display: none;
     }
@@ -195,6 +222,10 @@
 
     .button {
         font-size: 12px;
+    }
+
+    .profile__list-bottom-menu {
+        display: none;
     }
 
 }

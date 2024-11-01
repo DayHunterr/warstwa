@@ -300,17 +300,14 @@ hr {
     display: flex;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 150px;
-    margin-top: 95px;
+    margin-bottom: 145px;
+    margin-top: 50px;
     white-space: nowrap;
     border-bottom: 1px solid;
     border-bottom-color: black;
     height: 45px;
 }
 
-/*section {*/
-/*    height: 100vh;*/
-/*}*/
 
 .section-title {
     width: 100%;
@@ -318,7 +315,7 @@ hr {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 150px;
-    margin-top: 105px;
+    margin-top: 50px;
     white-space: nowrap;
     border-bottom: 1px solid;
     border-bottom-color: black;
@@ -336,17 +333,17 @@ hr {
 
 .statue h2 {
     width: 81%;
-    margin: 10% 10% 3% 7%;
+    margin: 1% 10% 3% 7%;
 }
 
 .diploma h2 {
     width: 77%;
-    margin: 13% 10% 1% 8.2%;
+    margin: 5px 10% 1% 8.2%;
 }
 
 .contact h2 {
     width: 88%;
-    margin: 0 10% 1% 9.5%;
+    margin: 5px 10% 1% 9.5%;
 }
 
 .benefits {
@@ -725,7 +722,7 @@ hr {
 }
 
 .text-section-trophy .feature-item .feature-text h2 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
     width: 100%;
     margin: 0 0 20px 0;
@@ -734,10 +731,10 @@ hr {
 }
 
 .text-section-diploma .feature-item .feature-text h2 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
     border: none;
     text-transform: none;
 }
@@ -1110,40 +1107,40 @@ hr {
 }
 
 .benefits__list-bottom-menu, .recognition__list-bottom-menu {
-    margin-top: 80px;
-    padding: 10% 10% 0 5%;
+    margin-top: 50px;
+    padding: 3% 10% 0 5%;
 }
 
 .recognition__list-bottom-menu {
-    padding: 5% 10% 0 8%;
+    padding: 0 10% 0 8%;
 }
 
 .tradition__list-bottom-menu {
-    padding: 15% 10% 0 9%;
+    padding: 15% 8% 0 12%;
 }
 
 .persistence__list-bottom-menu {
-    padding: 18% 10% 50px 9%;
+    padding: 12% 8% 50px 12%;
 }
 
 .quality__list-bottom-menu {
-    padding: 17% 10% 5% 9%;
+    padding: 11% 8% 5% 12%;
 }
 
 .guests__list-bottom-menu {
-    padding: 5% 10% 12% 5%;
+    padding: 3% 2% 2% 8%;
 }
 
 .statue__list-bottom-menu {
-    padding: 100px 10% 35px 9%;
+    padding: 40px 6% 30px 12%;
 }
 
 .diploma__list-bottom-menu {
-    padding: 5% 10% 10% 10%;
+    padding: 1% 6% 1% 12%;
 }
 
 .contact__list-bottom-menu {
-    padding: 3% 10% 3% 4%;
+    padding: 3% 10% 3% 8%;
 }
 
 .bottom-menu__container-items {
@@ -1223,11 +1220,11 @@ hr {
     }
 
     .section-title {
-        margin: 90px 0;
+        margin:  10px 0 70px 0;
     }
 
     .recognition {
-        padding-top: 70px;
+        padding-top: 10px;
     }
 
     .mob__side-menu {
@@ -1238,12 +1235,51 @@ hr {
         font-size: 15px;
     }
 
-    .benefits__list-bottom-menu {
-        margin-top: 120px;
+    .tradition h2,.persistence h2,.quality h2,.guests h2{
+        margin-top: 10px;
+    }
+
+    .benefits__list-bottom-menu,.recognition__list-bottom-menu,
+    .tradition__list-bottom-menu, .quality__list-bottom-menu,
+    .persistence__list-bottom-menu {
+        margin-top: 40px;
+    }
+
+    .benefits__list-bottom-menu{
+        margin-top: 0;
+        padding: 3% 10% 2% 5%;
     }
 
     .recognition__list-bottom-menu {
-        margin-top: 110px;
+        padding: 0 10% 2% 7%;
+    }
+
+    .tradition__list-bottom-menu{
+        padding: 15% 8% 0 7%;
+    }
+
+    .persistence__list-bottom-menu {
+        padding: 10% 8% 0 7%;
+    }
+
+    .quality__list-bottom-menu {
+        padding: 11% 8% 0 7%;
+    }
+
+    .guests__list-bottom-menu {
+        padding: 3% 2% 2% 8%;
+    }
+
+    .statue__list-bottom-menu{
+        padding: 40px 6% 30px 11%;
+    }
+
+    .diploma__list-bottom-menu{
+        padding: 1% 6% 1% 11%;
+    }
+
+    .contact__list-bottom-menu {
+        padding: 3% 10% 1% 11%;
     }
 
     .recognition__column-header {
@@ -1311,7 +1347,7 @@ hr {
     }
 
     .guests {
-        padding-top: 60px;
+        padding-top: 10px;
     }
 }
 
@@ -1323,7 +1359,7 @@ hr {
     }
 
     .section-title {
-        margin: 60px 0;
+        margin: 10px 0 60px 0;
     }
 
     .benefits__description-title {
@@ -1335,7 +1371,46 @@ hr {
     }
 
     .benefits__list-bottom-menu, .recognition__list-bottom-menu {
-        margin-top: 100px;
+        margin-top: 50px;
+    }
+
+    .benefits__list-bottom-menu {
+        padding: 3% 10% 0 10%;
+    }
+
+    .recognition__list-bottom-menu {
+        padding: 0 14% 7% 10%;
+    }
+
+    .tradition__list-bottom-menu {
+        padding: 15% 14% 0 11%;
+
+    }
+
+    .persistence__list-bottom-menu {
+        padding: 10% 14% 0 11%;
+
+    }
+
+    .quality__list-bottom-menu {
+        padding: 11% 14% 0 11%;
+
+    }
+
+    .guests__list-bottom-menu {
+        padding: 3% 2% 2% 11%;
+    }
+
+    .statue__list-bottom-menu {
+        padding: 40px 6% 50px 9%;
+    }
+
+    .diploma__list-bottom-menu {
+        padding: 1% 6% 5% 9%;
+    }
+
+    .contact__list-bottom-menu {
+        padding: 3% 10% 1% 13%;
     }
 
     .recognition__column-header {
@@ -1433,7 +1508,7 @@ hr {
     }
 
     .section-title {
-        margin: 30px 0;
+        margin: 10px 0 50px 0;
     }
 
     .benefits__description-text {
@@ -1441,7 +1516,31 @@ hr {
     }
 
     .benefits__list-bottom-menu, .recognition__list-bottom-menu {
-        margin-top: 80px;
+        margin-top: 50px;
+    }
+
+    .benefits__list-bottom-menu {
+        padding: 10% 10% 2% 10%;
+    }
+
+    .tradition__list-bottom-menu {
+        padding: 15% 14% 2% 8%;
+    }
+
+    .persistence__list-bottom-menu {
+        padding: 15% 14% 2% 8%;
+    }
+
+    .quality__list-bottom-menu {
+        padding: 15% 14% 2% 8%;
+    }
+
+    .guests__list-bottom-menu {
+        padding: 3% 2% 2% 10%;
+    }
+
+    .contact__list-bottom-menu {
+        padding: 3% 10% 1% 10%;
     }
 
     .recognition__column-header {
@@ -1510,6 +1609,11 @@ hr {
         margin-bottom: 20px;
     }
 
+    .benefits__list-bottom-menu, .recognition__list-bottom-menu {
+        padding: 5% 0 5% 0;
+        width: 100%;
+    }
+
     .bottom-menu__container-items {
         justify-content: normal;
         width: auto;
@@ -1539,20 +1643,16 @@ hr {
     }
 
     .tradition__list-bottom-menu, .persistence__list-bottom-menu, .quality__list-bottom-menu {
-        padding: 0;
+        padding: 15% 0 5% 0;
         margin-top: 60px;
     }
 
-    .quality__list-bottom-menu {
-        margin-bottom: 60px;
-    }
-
     .tradition h2, .persistence h2, .quality h2 {
-        margin-bottom: 35px;
+        margin-bottom: 15%;
     }
 
     .guests h2 {
-        margin-top: 25px;
+        margin-top: 20px;
         margin-bottom: 25px;
         font-size: 20px;
     }
@@ -1574,7 +1674,7 @@ hr {
     }
 
     .guests__list-bottom-menu {
-        padding: 0 0 60px 0;
+        padding: 0 0 40px 0;
         margin-top: 60px;
     }
 
@@ -1588,7 +1688,7 @@ hr {
     }
 
     .diploma h2, .statue h2 {
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 50px;
     }
 
@@ -2230,7 +2330,7 @@ hr {
 
     .diploma h2, .statue h2 {
         display: block;
-        margin-bottom: 0;
+        margin-bottom: 20px;
         font-size: 16px;
         font-weight: 700;
     }
