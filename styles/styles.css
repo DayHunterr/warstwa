@@ -1775,7 +1775,7 @@ hr {
 
     .bottom-menu__container-items{
         justify-content: center;
-        transform: rotate(-90deg);
+        transform: rotate(90deg)scaleY(-1);
         height: 100%;
         width: 100vw;
         column-gap: 10px;
@@ -1784,24 +1784,26 @@ hr {
     .bottom-text {
         font-size: 14px ;
         padding: 0 10px 0 10px;
+        transform: scaleX(-1);
+
     }
 
     .bottom-menu__container-item {
         row-gap: 3px;
     }
 
-    .bottom-menu__container-item:first-child {
+    .bottom-menu__container-item:last-child {
         position: relative;
         bottom: 6px;
         padding-top: 6px;
     }
 
-    .bottom-menu__container-item:first-child .bottom-text {
+    .bottom-menu__container-item:last-child .bottom-text {
         border-radius: 0 0 5px 5px ;
         padding-bottom: 6px;
     }
 
-    .bottom-menu__container-item:first-child .bottom-text::before {
+    .bottom-menu__container-item:last-child .bottom-text::before {
         content: '';
         position: absolute;
         top: -50%;

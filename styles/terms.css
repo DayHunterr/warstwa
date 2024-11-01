@@ -106,4 +106,12 @@ body{
         margin-bottom: 10px;
     }
 
+    .mob__side-menu .bottom-menu__container-item:last-of-type .line {
+        background: rgba(0, 0, 0, 0.80);
+    }
+
+    .mob__side-menu .bottom-menu__container-item:not(:last-of-type) .line {
+        background: rgba(0, 0, 0, 0.14);
+    }
+
 }

@@ -158,6 +158,10 @@
     padding: 50px 0 ;
 }
 
+.profile__list-bottom-menu .line {
+    background: rgba(0, 0, 0, 0.14);
+}
+
 @media (max-width: 1200px) {
     .profile__list-bottom-menu {
         padding: 50px 0 ;
@@ -226,6 +230,14 @@
 
     .profile__list-bottom-menu {
         display: none;
+    }
+
+    .mob__side-menu .bottom-menu__container-item:last-of-type .line {
+        background: rgba(0, 0, 0, 0.80);
+    }
+
+    .mob__side-menu .bottom-menu__container-item:not(:last-of-type) .line {
+        background: rgba(0, 0, 0, 0.14);
     }
 
 }
