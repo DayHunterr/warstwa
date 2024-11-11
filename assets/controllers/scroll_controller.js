@@ -11,10 +11,12 @@ export default class extends Controller {
     }
 
     initialize() {
+        // Устанавливаем текущую секцию по индексу
         this.currentSection = this.sectionTargets[this.startingPageValue] || null;
         this.cleared = true;
 
         if (this.currentSection) {
+            // Прокручиваем к начальной секции
             this.scrollToSection(this.currentSection);
         } else {
             console.warn("Не удалось найти начальный раздел для скролла");
@@ -25,40 +27,31 @@ export default class extends Controller {
     }
 
     connect() {
-        this.setupTouchEvents();
+        this.setupWheelListener();
     }
 
     disconnect() {
-        this.removeTouchEvents();
+        this.removeWheelListener();
     }
 
-    setupTouchEvents() {
-        this.touchStartY = 0;
-        this.touchEndY = 0;
-
-        this.element.addEventListener("touchstart", (event) => this.onTouchStart(event));
-        this.element.addEventListener("touchend", (event) => this.onTouchEnd(event));
+    setupWheelListener() {
+        window.addEventListener("wheel", (event) => this.onWheel(event));
     }
 
-    removeTouchEvents() {
-        this.element.removeEventListener("touchstart", (event) => this.onTouchStart(event));
-        this.element.removeEventListener("touchend", (event) => this.onTouchEnd(event));
+    removeWheelListener() {
+        window.removeEventListener("wheel", (event) => this.onWheel(event));
     }
 
-    onTouchStart(event) {
-        this.touchStartY = event.changedTouches[0].screenY;
-    }
+    onWheel(event) {
+        const delta = event.deltaY;
 
-    onTouchEnd(event) {
-        this.touchEndY = event.changedTouches[0].screenY;
-
-        const delta = this.touchStartY - this.touchEndY;
-
+        // Проверка открытого мобильного меню
         const isMobileMenuOpen = document.querySelector('#menu__toggle')?.checked;
         if (isMobileMenuOpen) {
             return;
         }
 
+        // Проверка прокрутки внутри секции
         const target = event.target.closest(`.${this.scrollableClassesValue}`);
         if (target) {
             // Проверка, можно ли прокручивать внутри секции
@@ -67,12 +60,14 @@ export default class extends Controller {
             const offsetHeight = target.offsetHeight;
 
             if (delta > 0) {
+                // Прокрутка вниз
                 if (scrollTop + offsetHeight < scrollHeight) {
-                    return;
+                    return; // Прокрутка внутри секции
                 }
             } else {
+                // Прокрутка вверх
                 if (scrollTop > 0) {
-                    return;
+                    return; // Прокрутка внутри секции
                 }
             }
         }
@@ -82,15 +77,18 @@ export default class extends Controller {
 
             let nextSection;
             if (delta > 0) {
+                // Прокрутка вниз (к следующей секции)
                 if (this.isSectionScrolledToBottom(this.currentSection)) {
                     nextSection = this.currentSection.nextElementSibling;
                 }
             } else {
+                // Прокрутка вверх (к предыдущей секции)
                 if (this.isSectionScrolledToTop(this.currentSection)) {
                     nextSection = this.currentSection.previousElementSibling;
                 }
             }
 
+            // Проверка существования следующей или предыдущей секции
             if (nextSection) {
                 this.triggerScrollEvent({ current: this.currentSection, next: nextSection });
                 this.currentSection = nextSection;
@@ -100,11 +98,13 @@ export default class extends Controller {
                     this.onScrollEnd();
                 }, this.travelTimeValue);
             } else {
+                // Если следующей или предыдущей секции нет, восстанавливаем состояние прокрутки
                 this.cleared = true;
             }
         }
     }
 
+    // Плавная прокрутка
     scrollToSection(section) {
         if (!section) return;
 
@@ -127,6 +127,7 @@ export default class extends Controller {
         requestAnimationFrame(step);
     }
 
+    // Проверка, что секция была прокручена до конца
     isSectionScrolledToBottom(section) {
         const scrollTop = section.scrollTop;
         const scrollHeight = section.scrollHeight;
@@ -135,6 +136,7 @@ export default class extends Controller {
         return scrollTop + offsetHeight >= scrollHeight;
     }
 
+    // Проверка, что секция прокручена вверх до начала
     isSectionScrolledToTop(section) {
         const scrollTop = section.scrollTop;
         return scrollTop <= 0;
@@ -152,5 +154,3 @@ export default class extends Controller {
         document.body.style.overflow = "hidden";
     }
 }
-
-
