@@ -1,0 +1,78 @@
+# messages.pl.yaml
+
+base.title: "Meritus Mercatum"
+
+main.sidebar_apply_project: "Zgłoś się"
+main.sidebar_apply_project_to: "do projektu"
+main.hero_deserving: "ZASŁUŻENI"
+main.hero_for_economy: "DLA GOSPODARKI"
+
+bottom_menu.about_award: "O WYROŻNIENIU"
+bottom_menu.values: "WARTOŚCI"
+bottom_menu.award_list: "LISTA WYROŻNIONYCH"
+bottom_menu.materials: "MATERIAŁY"
+bottom_menu.apply: "ZGŁOŚ SIĘ"
+
+benefits.title_about_award: "O WYROŻNIENIU"
+benefits.what_is_meritus: "Czym jest Meritus Mercatum?"
+benefits.what_is_meritus_text: "Firmy, które biorą udział w projekcie, mogą liczyć na wyjątkowe wsparcie w promocji swojego wizerunku. Laureaci otrzymują unikatowe materiały, takie jak elegancka statuetka, dyplom oraz inne elementy wizualne, które stanowią dowód uznania ich wieloletniej działalności i budują ich prestiż w oczach klientów."
+benefits.participant_benefits: "Korzyści dla uczestników."
+benefits.participant_benefits_text: "Meritus Mercatum to prestiżowy projekt skierowany do firm, które od lat z powodzeniem budują swoją markę i pozycję na rynku. Naszą misją jest wsparcie przedsiębiorstw z wieloletnią tradycją, pomagając im umocnić wizerunek jako stabilnych, godnych zaufania partnerów biznesowych. Uznajemy doświadczenie, solidność oraz ciągłość działań, które przyczyniają się do sukcesów tych firm."
+
+recognition.meritus_meaning: "meritus (łacina): godny, zasłużony"
+recognition.mercatum_meaning: "mercatum (łacina): rynek, targ"
+recognition.meritus_mercatum_meaning: "meritus mercatum (łacina): zasłużony dla gospodarki"
+recognition.meritus_text: "\"Meritus\" oznacza \"zasłużony\", \"godny\" lub \"nagrodzony\". Wkontekście projektu, to słowo symbolizuje zasługę, doświadczenie oraz długotrwałą działalnośćfirmy,która zdobywa swoją pozycję na rynku dzięki pracy, rzetelności i solidności.
+recognition.mercatum_text: "\"Mercatum\" odnosi się do \"rynku\" lub \"handlu\". Jest bezpośrednim nawiązaniem do działalności gospodarczej, handlowej i biznesowej. Symbolizuje przestrzeń, wktórej odbywa się wymiana towarów, usług i idei – tak jak w przypadku przedsiębiorstw, które budująswoje relacje i pozycję na rynku."
+recognition.meritus_mercatum_text: "Meritus Mercatum można interpretować jako \"Zasłużony dla gospodarki\", co podkreśla fakt, że projekt skierowany jest do firm, które zasłużyły na uznanie i wyróżnienie dzięki swojej długotrwałej i stabilnej działalności. Nazwa ta odzwierciedla ideę, że firmy uczestniczące w projekcie zasługują na szczególne uznanie w swojej branży i na rynku."
+
+tradition.title: "WARTOŚCI"
+tradition.tradition_title: "TRADYCJA"
+tradition.tradition_text: "Firmy z tradycjami to fundament stabilnego rynku. W Meritus Mercatum doceniamy przedsiębiorstwa, które od pokoleń pielęgnują wartości przekazywane z rąk do rąk. Ich doświadczenie i ciągłość działania budują zaufanie klientów oraz partnerów biznesowych."
+
+persistence.title: "WARTOŚCI"
+persistence.persistence_title: "WYTRWAŁOŚĆ"
+persistence.persistence_text: "Długotrwała obecność na rynku wymaga nie tylko wizji, ale i wytrwałości. Cenimy firmy, które potrafią sprostać wyzwaniom, nieustannie się rozwijając i adaptując do zmian. To właśnie one są prawdziwymi liderami swojej branży."
+
+quality.title: "WARTOŚCI"
+quality.quality_title: "WYSOKA JAKOŚĆ"
+quality.quality_text: "Tylko najwyższa jakość usług i produktów może przetrwać próbę czasu. Meritus Mercatum wspiera firmy, które stawiają na doskonałość w każdym aspekcie działalności, gwarantując swoim klientom pewność i zaufanie na lata."
+
+guests.title: "LISTA WYRÓŻNIONYCH"
+guests.show_button: "Pokaż"
+guests.company_name.orlen: "PKN ORLEN S.A."
+guests.company_location.warsaw: "Warszawa"
+guests.company_name.imago: "Imago! Polska Sp. zo.o. Sp. K."
+guests.company_location.rybnik: "Rybnik"
+guests.company_name.plantia: "Plantia"
+guests.company_location.wroclaw: "Wrocław"
+guests.company_name.webament: "Webament.pl"
+guests.company_location.zory: "Żory"
+guests.all_laureates_button: "Wszyscy laureaci"
+
+statue.title: "MATERIAŁY"
+statue.item1.title: "Statuetka"
+statue.item1.description: "Statuetka projektu Meritum Mectus to wyjątkowe wyróżnienie, które łączy w sobie elegancję i nowoczesne materiały. Wykonana z prasowanej płyty MDF, z frontem z matowego szkła akrylowego, doskonale wpisuje się w estetykę minimalistycznego designu. W centralnej części znajduje się order projektu, w którym osadzony jest medal galwanizowany 24-karatowym złotem. Całość uzupełnia grawerowana tabliczka z nazwą Twojej firmy co nadaje statuetce indywidualny charakter."
+statue.item2.title: "24 KARATOWE ZŁOTE"
+statue.item2.description: "Centralnym elementem statuetki jest medal, który został pokryty galwanicznie 24-karatowym złotem. To nie tylko symbol wartości, ale również podkreślenie wyjątkowości i znaczenia nagrody. Proces galwanizacji zapewnia trwałość i piękny, lśniący wygląd, nadając statuetce luksusowy wymiar."
+statue.item3.title: "MASYWNE, SOLIDNE WYKONANIE"
+statue.item3.description: "Statuetka wyróżnia się imponującym rozmiarem – ma aż 35 cm wysokości. Dzięki temu nie tylko przyciąga wzrok, ale również stanowi wyraźny symbol prestiżu i osiągnięć. Jej obecność w dowolnym pomieszczeniu natychmiast zwraca uwagę, stając się godną ekspozycji ozdobą."
+statue.item4.title: "INDYWIDUALNY GRAWER Z NAZWĄ FIRMY"
+statue.item4.description: "U podstawy statuetki znajduje się tabliczka z wygrawerowaną nazwą Twojej firmy. Ten indywidualny akcent sprawia, że każda statuetka jest unikalna, a jej właściciel może z dumą prezentować swoje osiągnięcia. Grawerowanie wykonane z największą precyzją podkreśla wysoką jakość statuetki."
+
+diploma.title: "MATERIAŁY"
+diploma.item1.title: "DYPLOM"
+diploma.item1.description: "Dyplom projektu Meritum Mectus to prestiżowe wyróżnienie, które łączy w sobie elegancję i nowoczesne technologie druku. Wykonany przy użyciu zaawansowanych technik uszlachetniających, takich jak srebrna folia 3D i folia smooth touch, dyplom zachwyca nie tylko treścią, ale również wyjątkowym wykończeniem. Każdy detal podkreśla prestiż i wartość tego wyróżnienia, czyniąc go idealną nagrodą dla osób o szczególnych osiągnięciach."
+diploma.item2.title: "Druk z uszlachetnieniami"
+diploma.item2.description: "Dyplom wyróżnia się zastosowaniem wielu technik uszlachetniania druku, które nadają mu wyjątkowy wygląd. Srebrna folia 3D podkreśla kluczowe elementy projektu, nadając im elegancki, połyskujący akcent. Dodatkowo folia smooth touch zapewnia subtelne, jedwabiste wykończenie, które jest przyjemne w dotyku i wzbogaca doświadczenie odbioru dyplomu."
+diploma.item3.title: "Elegancka rama"
+diploma.item3.description: "Dyplom został oprawiony w elegancką, czarną ramę w formacie A4+. Wykończenie to nadaje mu klasyczny wygląd, jednocześnie chroniąc druk przed uszkodzeniami. Dzięki ramie, dyplom od razu jest gotowy do ekspozycji, stanowiąc stylową ozdobę biura, gabinetu lub domu."
+diploma.item4.title: "INDYWIDUALNY GRAWER Z NAZWĄ FIRMY"
+diploma.item4.description: "Podkreślając indywidualność i wyjątkowość każdego wyróżnienia, dyplom zawiera grawer z nazwą Twojej firmy. Ten personalizowany element dodaje dyplomowi charakteru i sprawia, że nagroda jest niepowtarzalna, pozostając trwałą pamiątką sukcesów i osiągnięć."
+
+contact.title: "DOŁĄCZ"
+contact.main.title: "Dołącz do grona prestiżowych firm"
+contact.main_text: "Dołącz do grona prestiżowych firm, które budują swoją pozycję z Meritus Mercatum! Wypełnij krótki formularz, aby otrzymać nasze unikalne materiały i dowiedzieć się, jak możemy pomóc w umocnieniu wizerunku Twojej marki. Dzięki nam podkreślisz swoje doświadczenie i zaufanie w branży. Nie zwlekaj – wypełnij formularz i odkryj korzyści płynące ze współpracy z Meritus Mercatum!"
+contact.form.highlight: "Twoja firma istnieje co najmniej 5 lat na rynku? Możesz dołączyć do projektu!"
+contact.form.submit_button: "Wyślij"
+contact.security_info: "Strona jest zabezpieczona certyfikatem bezpieczeństwa a połączenie jest szyfrowane."

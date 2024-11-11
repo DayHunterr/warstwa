@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10vw 0 20vw;
+}
+
+.nav_mobile__logo{
+    display: none;
+}
+
+.section-title__list-main {
+    width: 80%;
+    display: flex;
+    font-size: 20px;
+    margin-top: 105px;
+    margin-left: 10%;
+    white-space: nowrap;
+    border-bottom: 1px solid;
+    border-bottom-color: black;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 0 0 15vw;;
+    }
+
+    .award-list {
+        padding: 0 5% 0 0;
+    }
+
+    .section-title__list-main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .award-item, .award-item-last, .company-info {
+        padding-left: 0;
+    }
+
+    .nav_mobile {
+        justify-content: flex-end;
+    }
+
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+        background-color: black;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span,
+    #menu__toggle:checked ~ .menu__btn > span::before,
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        background-color: white;
+    }
+
+}

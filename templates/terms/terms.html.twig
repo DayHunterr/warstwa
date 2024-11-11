@@ -1,0 +1,372 @@
+{% extends 'base.html.twig' %}
+
+    {% block title %}{{ 'list_title'|trans }}{% endblock %}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('terms') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('terms') }}
+    {% endblock %}
+
+
+{% block body %}
+    {% include 'menu.html.twig' %}
+    {% include 'mob-menu.html.twig' %}
+<div class="container">
+        <h1 class="section-title_terms-main font-w-700">Regulamin</h1>
+    <div class="terms">
+        <h2 class="section-title-terms__title-second font-w-300">Regulamin projektu “meritus Mercatum”</h2>
+        <ul>
+            <li class="section-title-terms font-w-700">§1. Słowniczek</li>
+            <p class="section-title-terms__after">Pojęcia zawarte w niniejszym Regulaminie otrzymują następujące brzmienie, chyba że z Regulaminu wprost wynika inaczej:<p/>
+            <ul>
+                <li class="list-item">1. Operator - Beautiful Company sp. z o.o. sp. k. z siedzibą we Wrocławiu przy ol.
+                    Aleksandra Ostrowskiego 13D, 53-238 Wrocław, wpisana do Krajowego Rejestru Sądowego przez Sąd
+                    Rejonowy we Wrocławiu, Wydział Gospodarczy KRS pod numerem KRS: 0000749100, NIP: 8943132676, REGON:
+                    381313360
+                </li>
+                <li class="list-item">2. Nagroda – informacja na stronie internetowej Operatora o wyłonieniu uczestnika
+                    w ramach projektu Złota Firma.
+                </li>
+                <li class="list-item">3. Uczestnik – podmiot gospodarczy – osoba fizyczna wykonująca we własnym imieniu
+                    działalność gospodarczą lub osoba prawna
+                </li>
+                <li class="list-item">4. Regulamin – oznacza niniejszy regulamin projektu „Złota Firma”</li>
+                <li class="list-item">5. Portal – strona internetowa – np. Facebook, Google Maps, Booking.com itp</li>
+                <li class="list-item">6. Projekt – oznacza całokształt czynności faktycznych i prawnych związanych z
+                    przyznawaniem Nagród w ramach projektu Złota firma.
+                </li>
+                <li class="list-item">7. Weryfikacja – proces badania Uczestników</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <ul>
+                <li class="section-title-terms font-w-700">§2. Postanowienia Wprowadzające</li>
+            </ul>
+            <li class="list-item">1. Niniejszy Regulamin określa zasady i tryb postępowania przy organizacji Projektu
+                „Złota Firma” oraz platformy www.zlotafirma.pl.
+            </li>
+            <li class="list-item">2. Projekt organizowany jest na terytorium Europy i podlega ustawodawstwu polskiemu.
+            </li>
+            <li class="list-item">3. Przyznawanie Nagród ma na celu promocję Uczestników Projektu, którzy są najlepiej
+                oceniani przez internautów na portalach internetowych uznanych przez Operatora za miarodajne i rzetelne.
+                Operator każdorazowo dokonuje analizy i wyboru portali z których baz czerpie opinie o Uczestnikach
+                projektu. Następnie po dokonanej analizie przez operatora wyłaniani są Uczestnicy – zwycięzcy projektu,
+                którzy są promowani poprzez działania Operatora o charakterze reklamowym i marketingowym szczegółowo
+                opisane w niniejszym regulaminie.
+            </li>
+            <li class="list-item">4. Uczestnictwo w Projekcie jest dobrowolne i darmowe.</li>
+            <li class="list-item">5. Prawa własności intelektualnej Operatora, zawarte na jego stronie internetowej w
+                szczególności do tekstów, informacji, materiałów, treści, grafiki, zdjęć stanowią wyłączną własność
+                Operatora i podlegają ochronie prawnej.
+            </li>
+            <li class="list-item">6. Kopiowanie, przesyłanie, modyfikowanie, przetwarzanie, redystrybuowanie w/w
+                materiałów jest zakazane z wyłączeniem posiadania odrębnego umocowania udzielonego przez Operatora.
+            </li>
+        </ul>
+
+        <ul>
+            <ul>
+                <li class="section-title-terms font-w-700">§3. Tryb Wyłaniania Zwycięzców i Przyznawanie Nagród</li>
+            </ul>
+            <li class="list-item">1. Uczestnikami projektu zostają podmioty, która albo zgłoszą się bezpośrednio do
+                operatora lub zostaną wytypowane przez Operatora w sposób zautomatyzowany z ogólnodostępnych dostępnych
+                baz danych podmiotów gospodarczych danego kraju. Po wybraniu listy Uczestników specjalistyczne
+                oprogramowanie Operatora wyszukuje profile internetowe dotyczące danego Uczestnika, które zawierają
+                oceny lub opinie punktowe.
+            </li>
+            <li class="list-item">2. Każdorazowo Operator samodzielnie dokonuje wyboru portali z których czerpie oceny o
+                Uczestnikach Projektu, mając na względzie rzetelność informacji zawartych w tych portalach oraz ich
+                powszechną dostępność. Operator nie będzie wykorzystywał informacji z portali o niesprawdzonej reputacji
+                lub źródłach, niszowych lub ogólnie niedostępnych. Operator nie ponosi odpowiedzialności za treść
+                komentarzy dotyczących Uczestników umieszczonych w Internecie, jak również nie ponosi odpowiedzialności,
+                za opinie które nie były dostępne dla oprogramowania Operatora lub do których Operator nie miał dostępu
+                z jakichkolwiek innych powodów. Operator nie ponosi również odpowiedzialności za opinie/oceny, które
+                zostały opublikowane po wykonaniu analizy. Operator również nie ponosi odpowiedzialności za
+                opinie/oceny, które z jakiegokolwiek powodu nie zostały udostępnione, opublikowane i których nie było
+                możliwości weryfikacji w trakcie prowadzenia badania jak i po jego zakończeniu.
+            </li>
+            <li class="list-item">3. Operator po zgromadzeniu informacji z wybranych portali dokonuje analizy zebranych
+                opinii. Uczestnik, który uzyskał minimum 75% pozytywnych opinii kwalifikuje się do dalszego udziału w
+                Projekcie.
+            </li>
+            <li class="list-item">4. Analiza opinii polega na wzięciu pod uwagę przez Operatora opinii/ocen
+                zamieszczonych w portalach (dla skali od 1 do 5, operator uznaje wyłącznie za pozytywną ocenę 4 lub 5,
+                dla skali od 1 do 10, Operator uznaje wyłącznie za pozytywną ocenę od 8 do 10). Powyższa analiza
+                dokonywana jest dla każdego portalu oddzielnie. Następnie Operator dokonuje zbiorczej analizy ze
+                wszystkich Portali w których Uczestnik posiada swoje profile z których wyciąga średnią ważoną.
+            </li>
+            <li class="list-item">5. Uczestnik kwalifikuje się do udziału w projekcie gdy Operator uzyskał minimum 5
+                ocen Uczestnika. Dokonanie analizy ocen jest ostateczne i nie podlega żadnej procedurze odwoławczej.
+            </li>
+            <li class="list-item">6. Operator zastrzega, że będzie dokonywał analizy Uczestników w ramach projektu
+                sukcesywnie, natomiast ze względu na liczbę zarejestrowanych podmiotów gospodarczych nie jest możliwe
+                dokonanie takiej analizy jednocześnie. Uczestnicy biorący udział w projekcie nie będą odrębnie
+                informowani przez Operatora o ich uczestnictwie.
+            </li>
+            <li class="list-item">7. Uczestnik, który spełnił powyższe wymagania i zakwalifikował się do udziału w
+                projekcie, wówczas jego dane zostaną umieszczone na stronie internetowej Operatora www.zlotafirma.pl
+            </li>
+            <li class="list-item">8. Uczestnicy są kategoryzowani przez Operatora na podstawie kodów pocztowych siedzib
+                swoich przedsiębiorstw oraz profilu działalności gospodarczej.
+            </li>
+            <li class="list-item">9. Podmiot gospodarczy który nie jest uczestnikiem projektu ma możliwość wzięcia
+                udziału w projekcie poprzez dokonanie zgłoszenia za pośrednictwem formularza zgłoszeniowego
+                opublikowanego na stronie www.zlotafirma.pl. Podmiot taki zostanie poddany analizie przez Operatora
+                niezwłocznie. Celem zakwalifikowania się do udziału w projekcie podmiot ten musi spełnić kryteria
+                określone w niniejszym paragrafie.
+            </li>
+            <li class="list-item">10. Analiza dokonana przez Operatora bez względu czy na podstawie samodzielnego
+                zgłoszenia lub z inicjatywy Operatora jest bezpłatna.
+            </li>
+            <li class="list-item">11. Uczestnicy, którzy zostali zwycięzcami w ramach projektu otrzymują możliwość
+                dobrowolnego zakupienia dodatkowego pakietu promocyjnego. Operator będzie informował Uczestników o
+                zwycięstwie w ramach projektu drogą telefoniczną i przekaże podczas tej rozmowy ofertę zakupu pakietu
+                promocyjnego.. Dokonanie zakupu pakietu promocyjnego w żaden sposób nie wpływa na wyniki dokonywanej
+                przez operatora analizy ani na posiadanie statusu zwycięzcy w ramach projektu.
+            </li>
+            <li class="list-item">12. Skład pakietu promocyjnego jest zmienny i zależy od edycji projektu. Informacje o
+                składzie pakietu promocyjnego będą każdorazowo publikowane na stronie internetowej Operatora.
+            </li>
+            <li class="list-item">13. Zwycięzcy projektu, którzy dokonali zakupu pakietu promocyjnego dodatkowo
+                otrzymują możliwość posługiwania się logo projektu w swoich materiałach reklamowych tych zarówno w
+                wersji elektronicznej lub fizycznej.
+            </li>
+            <li class="list-item">14. Posiadanie i posługiwanie się przez Uczestnika pakietem promocyjnym oraz
+                publikacja danych Uczestnika na stronie Projektu nie jest podstawą do przeniesienia na Operatora
+                odpowiedzialności za działania Uczestnika Projektu. Uczestnictwo w projekcie ma bowiem wyłącznie
+                charakter marketingowy i reklamowy i nie może być podstawą do kierowania roszczeń w stosunku do
+                Operatora za samoistne działania Uczestnika Projektu w ramach wykonywanej przez niego działalności
+                gospodarczej. Uczestnik ponosi wyłączną odpowiedzialność za swoje działania i zwalnia Operatora z
+                odpowiedzialności w tym zakresie.
+            </li>
+            <li class="list-item">15. Oferta nabycia pakietu promocyjnego jest przedstawiana uczestnikowi projektu bądź
+                z inicjatywy Operatora bądź w wyniku zgłoszenia przez Uczestnika.
+            </li>
+            <li class="list-item">16. Pakiet promocyjny przygotowywany jest przez Operatora indywidualnie dla
+                Uczestników i posiada personalizowane cechy takie jak dane identyfikujące Uczestnika (nazwa, forma
+                prawna).
+            </li>
+            <li class="list-item">17. Podmiot, który nie został zwycięzcą w ramach projektu nie ma możliwości złożenia
+                zamówienia pakietu promocyjnego. Pakiet promocyjny jest dostarczany Uczestnikom za pośrednictwem firmy
+                kurierskiej.
+            </li>
+            <li class="list-item">18. Uczestnik Projektu wyraża zgodę na opublikowanie danych jego przedsiębiorstwa na
+                stronie internetowej Projektu, które to dane są dostępne w publicznych rejestrach i ewidencjach
+                Uczestnik posiada uprawnienie do żądania wykreślenia swoich danych ze strony internetowej Operatora, co
+                nastąpi niezwłocznie po otrzymaniu takiego zgłoszenia
+            </li>
+            <li class="list-item">19. Projekt organizowany jest przez Operatora w corocznych edycjach.</li>
+            <li class="list-item">20. Uczestnik chcąc uzyskać w kolejnej edycji projektu Nagrodę i zostać zwycięzcą musi
+                każdorazowo spełniać wymogi określone niniejszym regulaminem, w szczególności spełnić szczegółowo
+                określone kryteria projektu w ramach każdej kolejnej edycji.
+            </li>
+        </ul>
+        <ul>
+            <ul>
+                <li class="section-title-terms font-w-700">§4. Proces składania zamówienia</li>
+            </ul>
+            <li class="list-item">1. Uczestnik, który został zwycięzcą w ramach projektu ma możliwość złożenia
+                zamówienia pakietu promocyjnego drogą telefoniczną lub mailową.
+            </li>
+            <li class="list-item">2. W przypadku zamówienia telefonicznego Uczestnik otrzymuje przesyłkę kurierską za
+                pobraniem lub w przypadku płatności online Uczestnik otrzymuje pakiet promocyjny przesyłką bez pobrania.
+            </li>
+            <li class="list-item">3. Operator ma możliwości udostępniania różnych form płatności i zmiany tych form w
+                dowolnym czasie i zakresie.
+            </li>
+            <li class="list-item">4. Pakiet promocyjny zostanie nadany do Uczestnika w terminie 5 dni roboczych od
+                złożenia zamówienia (w przypadku przesyłki za pobraniem). W przypadku wyboru płatności elektronicznej
+                pakiet marketingowy zostanie nadany do Uczestnika w terminie 5 dni roboczych od zaksięgowania płatności
+                na koncie Operatora.
+            </li>
+        </ul>
+        <ul>
+            <ul>
+                <li class="section-title-terms font-w-700">§5. Reklamacje</li>
+            </ul>
+            <li class="list-item">1. Reklamacje należy zgłaszać do operatora za pośrednictwem adresu poczty
+                elektronicznej kontakt@zlotafirma.pl
+            </li>
+            <li class="list-item">2. Reklamacje będą rozpatrywane w terminie 5 dni roboczych od momentu zgłoszenia.</li>
+            <li class="list-item">3. Do postępowania reklamacyjnego zastosowanie znajdują przepisy art. 556 i następne
+                kodeksu cywilnego.
+            </li>
+            <li class="list-item">4. Jeżeli przesyłka promocyjna będzie posiadała wadę produkcyjną, Uczestnikowi
+                przysługuje – po rozpatrzeniu reklamacji – ponowna przesyłka pakietu promocyjnego nadana w terminie 5
+                dni roboczych od rozpatrzenia reklamacji.
+            </li>
+            <li class="list-item">5. W przypadku uszkodzenia pakietu promocyjnego przez kuriera lub w transporcie,
+                Uczestnikowi przysługuje ponowna przesyłka pakietu promocyjnego nadana w terminie 5 dni roboczych – bez
+                konieczności składania reklamacji.
+            </li>
+        </ul>
+        <ul>
+            <ul>
+                <li class="section-title-terms font-w-700">§6. Dane osobowe i klauzula RODO</li>
+            </ul>
+            <li class="list-item">1. Uczestnikowi przysługuje prawo do odstąpienia od umowy niezwłocznie po otrzymaniu
+                pakietu promocyjnego jednak nie później niż w terminie 7 dni od otrzymania pakietu. W przypadku
+                odstąpienia od umowy Uczestnik jest zobowiązany do złożenia pisemnego oświadczenia o odstąpieniu od
+                umowy w formie elektronicznej na adres kontakt@zlotafirma.pl oraz do odesłania w stanie nienaruszonym
+                przesyłki marketingowej na adres rejestrowy Operatora w terminie 7 dni od otrzymania przesyłki.
+            </li>
+            <li class="list-item">2. Operator zastrzega sobie możliwość odmowy uwzględnienia odstąpienia od umowy w
+                przypadku uchybienia terminowi określonemu w punkcie 1 oraz z innych ważnych przyczyn pomimo zachowania
+                terminu – każde odstąpienie od umowy będzie rozpatrywane indywidualnie, a także ze względu na fakt, że
+                pakiet promocyjny ma charakter zindywidualizowany i jest wytwarzany pod specjalne zamówienie Uczestnika
+                zawierając trwale naniesione na materiały promocyjne dane Uczestnika takie jak nazwa, adres.
+            </li>
+        </ul>
+
+        <ul>
+            <ul>
+                <li class="section-title-terms font-w-700">§7. Postanowienia Wprowadzające</li>
+            </ul>
+            <li class="list-item">1. Zgodnie Z Postanowieniami Ogólnego Rozporządzenia O Ochronie Danych Osobowych Z
+                Dnia 27 Kwietnia 2016 r. Operator Projektu informuje, Iż Administratorem Danych Osobowych Jest Beautiful
+                Company sp. z o.o. sp. k. z Siedzibą We Wrocławiu. Osoba Fizyczna, Której Dane Dotyczą, Może
+                Skontaktować Się Z Administratorem Danych Osobowych:
+            </li>
+            <ul>
+                <li class="list-item__item"> c. Pisemnie na adres ol. Aleksandra Ostrowskiego 13D, 53-238 Wrocław</li>
+                <li class="list-item__item"> b. Za pośrednictwem adresu mailowego kontakt@zlotafirma.pl</li>
+            </ul>
+            <li class="list-item">2. Administrator Danych Osobowych Wyznaczył Inspektora Ochrony Danych(IOD), Z Którym
+                Można Skontaktować Się We Wszystkich Sprawach Dotyczących Przetwarzania Danych Osobowych Oraz
+                Korzystania Z Praw Związanych Z Przetwarzaniem Danych. Osoba, Której Dane Dotyczą Może Skontaktować Się
+                Z IOD W Następujący Sposób:
+            </li>
+            <ul>
+                <li class="list-item__item">a. pisemnie na adres ol. Aleksandra Ostrowskiego 13D, 53-238 Wrocław</li>
+                <li class="list-item__item">b. za pośrednictwem adresu mailowego kontakt@zlotafirma.pl</li>
+            </ul>
+            <li class="list-item">3. Administrator Danych Osobowych Przetwarza Dane Osobowe W Następujących Celach</li>
+            <ul>
+                <li class="list-item__item">a. podjęcie działań przed zawarciem umowy – przygotowanie oferty, przedstawienia oferty uzyskania
+                    pakietu promocyjnego, wzięcia udziału w Projekcie, zawarcia umowy uzyskania pakietu promocyjnego,
+                    wykonania umowy uzyskania pakietu promocyjnego, wykonania czynności związanych z obsługa projektu,
+                    wysyłki pakietów promocyjnych, publikacji danych na stronie internetowej administratora, stworzenia
+                    zestawienia mającego na celu promocję usług i reklamę uczestników projektu, zgłoszenia reklamacji w
+                    ramach umowy uzyskania pakietu promocyjnego, dochodzenia roszczeń, marketingu bezpośredniego
+                    produktów i usług własnych administratora – w przypadku marketingu bezpośredniego produktów i usług
+                    własnych nie będzie stosowane profilowanie.
+                </li>
+                <li class="list-item__item">b. przeciwdziałania nieuczciwej konkurencji;</li>
+                <li class="list-item__item">c. rozpatrzenia zgłoszonych reklamacji i odwołań dotyczących usług świadczonych przez administratora, a
+                    także wniosków i zapytań skierowanych do administratora;
+                </li>
+                <li class="list-item__item">d. analitycznych i statystycznych;</li>
+            </ul>
+            <li class="list-item">4. Odbiorcą Danych Osobowych Mogą Być Również Podmioty Swiadczące Usługi
+                Teleinformatyczne, Podmioty Współpracujące Z Administratorem, Podwykonawcy Administratora, Podmioty
+                Swiadczące Usługi Pocztowe, Kurierskie, Obsługę Prawną I Księgową, Ubezpieczeniową I Bankową.
+            </li>
+            <li class="list-item">5. Dane Osobowe Nie Będą Przekazywane Do Państwa Trzeciego Lub Organizacji
+                Międzynarodowej.
+            </li>
+            <li class="list-item">6. Podstawy Prawne Przetwarzania Danych Osobowych.</li>
+            <ul>
+                <li class="list-item__item">a. Przetwarzanie danych o przedsiębiorcach wynika z przepisów prawa m.in. ustawy z dnia 25 lutego 2016
+                    r. o ponownym wykorzystaniu informacji sektora publicznego oraz ogólnego rozporządzenia o ochronie
+                    danych osobowych z dnia 27 kwietnia 2016 r.;
+                </li>
+                <li class="list-item__item">b. Przetwarzanie danych ma na celu informowanie pozostałych uczestników obrotu gospodarczego o
+                    prowadzonej przez Uczestników działalności gospodarczej, zapewniając wszystkim dostęp do rzetelnych,
+                    wiarygodnych i transparentnych informacji, jednocześnie spełniając wymogi nakładane przez przepisy
+                    prawa o wykorzystaniu informacji publicznych;
+                </li>
+                <li class="list-item__item">c. Przetwarzane dane znajdują swoje źródło w publicznych serwisach informacyjnych, a są to Centralna
+                    Ewidencja i Informacja o Działalności Gospodarczej nadzorowana przez Ministra Rozwoju oraz Krajowy
+                    Rejestr Sądowy prowadzony przez Ministra Sprawiedliwości;
+                </li>
+                <li class="list-item__item">d. Przetwarzanie danych osobowych jest niezbędne do dokonania oceny przedsiębiorcy na potrzeby udziału
+                    w Projekcie, zawarcia umowy uzyskania pakietu promocyjnego;
+                </li>
+                <li class="list-item__item">e. Przetwarzanie danych nie wymaga odrębnej zgody ponieważ dane te są jawne, opublikowane w
+                    ogólnodostępnych bazach i rejestrach i odbywa się na podstawie prawnie uzasadnionego interesu
+                    administratora danych osobowych, takiego jak marketing bezpośredni produktów i usług własnych
+                    administratora, dochodzenia roszczeń z tytułu zawartej umowy uzyskania pakietu promocyjnego,
+                    analitycznych i statystycznych;
+                </li>
+                <li class="list-item__item">f. Wypełnienie obowiązków prawnych administratora danych wynikających z przepisów prawa polskiego,
+                    europejskiego i międzynarodowego;
+                </li>
+                <li class="list-item__item">g. Zgoda w przypadku jej dobrowolnego wyrażenia;</li>
+                <li class="list-item__item">h. Analitycznych i statystycznych;</li>
+            </ul>
+
+            <li class="list-item">7. Osoby, których Dane Osobowe Są Przetwarzane Przez Administratora, Mają W Związku Z
+                Tym Następujące Prawa:
+            </li>
+            <ul>
+                <li class="list-item__item">a. Prawo dostępu do swoich danych osobowych;</li>
+                <li class="list-item__item">b. Prawo żądania sprostowania, usunięcia lub ograniczenia przetwarzania danych osobowych – w takim
+                    zakresie, w jakim są one przetwarzane na potrzeby marketingu bezpośredniego;
+                </li>
+                <li class="list-item__item">c. Prawo do przenoszenia danych osobowych, co oznacza otrzymanie ich od administratora danych, w
+                    powszechnie używanym formacie oraz do przesłania ich do innego administratora;
+                </li>
+                <li class="list-item__item">d. Prawo do wniesienia skargi do organu nadzorczego zajmującego się ochroną danych osobowych, jakim
+                    jest Prezes Urzędu Ochrony Danych Osobowych;
+                </li>
+                <li class="list-item__item">e. Prawo do wycofania zgody – bez wpływu na zgodność z prawem czynności podjętych przed jej
+                    wycofaniem;
+                </li>
+                <li class="list-item__item">f. W przypadku zautomatyzowanego podejmowania decyzji, prawo do zakwestionowania tej decyzji, żądania
+                    ingerencji człowieka, celem uzyskania indywidualnej decyzji;
+                </li>
+            </ul>
+            <li class="list-item">8. Skorzystanie z praw wymienionych powyżej odbywać się będzie za pośrednictwem
+                administratora danych lub IOD.
+            </li>
+            <li class="list-item">9. W przypadku zawarcia umowy z administratorem, dane osobowe będą przechowywane do
+                momentu trwania projektu, trwania umowy, przedawnienia roszczeń z tytułu zawartej umowy lub do
+                wygaśnięcia obowiązku przechowywania danych, wynikającego z przepisów prawa, a w szczególności prawa
+                podatkowego. W przypadku udzielenia stosownej zgody dane osobowe będą wykorzystywane do celów
+                określonych w zgodzie, aż do momentu jej wycofania. Dane będą również przetwarzane dla celów
+                analitycznych i statystycznych przez okres 10 lat
+            </li>
+            <li class="list-item">10. Podanie Danych osobowych jest wymagane do zawarcia umowy uzyskania pakietu
+                marketingowego i wykonania tej umowy. Niepodanie danych osobowych lub brak wyrażenia zgody będzie
+                skutkowało brakiem możliwości zawarcia umowy. Podanie danych w celach marketingowych jest dobrowolne
+            </li>
+        </ul>
+
+        <ul>
+            <ul>
+                <li class="section-title-terms font-w-700">§8. Postanowienia Wprowadzające</li>
+            </ul>
+            <li class="list-item">1. Postanowienia Końcowe Niniejszy Regulamin Wchodzi W Zycie Z Dniem Publikacji Na
+                Stronie Internetowej Projektu www.zlotafirma.pl I Obowiązuje Do Jego Odwołania.
+            </li>
+            <li class="list-item">2. Wykładni Niniejszego Regulaminu Może Dokonywać Tylko Operator.</li>
+            <li class="list-item">3. Skargi i Wnioski Związane Ze Stosowaniem Regulaminu Należy Składać Do Operatora.
+            </li>
+            <li class="list-item">4. W Sprawach Nieuregulowanych Mają Zastosowanie Odpowiednie Przepisy Prawa
+                Polskiego.
+            </li>
+            <li class="list-item">5. Ewentualne Spory Wynikłe Ze Stosowania Niniejszego Regulaminu, Niemożliwe Do
+                Rozstrzygnięcia W Sposób Polubowny, Poddaje Się Pod Rozstrzygnięcie Właściwego Rzeczowo Sądu
+                Powszechnego Dla Operatora
+            </li>
+            <li class="list-item">6. Koordynatorem Projektu jest Adelina Sinc. Kontakt Do Operatora Odbywać Się Może Za
+                Pośrednictwem Poczty Elektronicznej kontakt@zlotafirma.pl Lub Na Adres Rejestrowy.
+            </li>
+            <li class="list-item">7. Postanowienia Niniejszego Regulaminu Mają Charakter Rozłączny, A Uznanie
+                Któregokolwiek Z Nich Za Nieważne, Nie Uchybia Mocy Wiążącej Pozostałych.
+            </li>
+            <li class="list-item">8. Wszelkie Zmiany Niniejszego Regulaminu Mogą Być Dokonywane W Formie Uchwały Zarządu
+                Operatora.
+            </li>
+            <li class="list-item">9. Operator Zastrzega Sobie Prawo Do Odwołania Projektu Bez Podania Przyczyn Oraz Bez
+                Możliwości Ubiegania Się O Odszkodowanie Lub Zadośćuczynienie.
+            </li>
+
+        </ul>
+    </div>
+</div>
+{% endblock %}

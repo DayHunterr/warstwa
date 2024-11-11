@@ -1,0 +1,60 @@
+<div {{ stimulus_controller('menu') }}>
+    <div class="main__sidebar">
+        <div class="main__sidebar-top">
+            <div class="main__top-icon">
+                <a href="/">
+                    <img src="img/meritus_mercatum_main_hu.png" alt="Logo">
+                </a>
+            </div>
+            <div class="main__top-line-container" {{ stimulus_action('menu','onOpenMenu','click') }}>
+                <div class="line-main"></div>
+                <div class="line-main"></div>
+                <div class="line-main"></div>
+                <div class="line-main"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="main__sidebar-bottom">
+            <a class="main__bottom-text" href="#contact-form">
+                <span class="font-w-800">Zgłoś się</span>
+                <span>do projektu</span>
+            </a>
+        </div>
+    </div>
+    <div class="main__side-menu" {{ stimulus_target('menu','sideMenu') }}>
+        <ul class="main__menu-items">
+            <li><a class="font-w-400" href="#">O Wyróżnieniu</a></li>
+            <li><a class="font-w-400" href="#">Wartości</a></li>
+            <li><a class="font-w-400" href="#">Lista Wyróżnionych</a></li>
+            <li><a class="font-w-400" href="#">Materiały</a></li>
+            <li><a class="font-w-400" href="#">Regulamin</a></li>
+        </ul>
+        <div class="side__bottom-button">
+            <button class="action-btn font-w-700">ZGŁOŚ SIĘ</button>
+        </div>
+    </div>
+</div>
+<div class="mob__side-menu" {{ stimulus_controller('change-color') }}>
+    <div class="bottom-menu__container-items">
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">ZGŁOŚ SIĘ</p>
+            <div class="line" {{ stimulus_target('change-color','line') }}></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">MATERIAŁY</p>
+            <div class="line" {{ stimulus_target('change-color','line') }}></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">LISTA WYROŻNIONYCH</p>
+            <div class="line" {{ stimulus_target('change-color','line') }}></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">WARTOŚCI</p>
+            <div class="line" {{ stimulus_target('change-color','line') }}></div>
+        </div>
+        <div class="bottom-menu__container-item">
+            <p class="bottom-text">O WYROŻNIENIU</p>
+            <div class="line" {{ stimulus_target('change-color','line') }}></div>
+        </div>
+    </div>
+</div>

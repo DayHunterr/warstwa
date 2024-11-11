@@ -1,0 +1,34 @@
+<div class="nav_mobile" {{ stimulus_controller('menu') }}>
+    <div class="nav_mobile__logo">
+        <a href="/" class="nav_mobile__logo-link">
+            <img src="{{ asset('build/images/logo_ro.svg') }}" alt="Logo">
+        </a>
+    </div>
+    <div id="mob_menu">
+        <input id="menu__toggle" type="checkbox" {{ stimulus_target('menu','mobMenuTrigger') }}
+        {{ stimulus_action('menu','toggleScroll','change') }}">
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <div id="mob-items">
+            <div class="mob-nav-item">
+                <a href="#">Balíček materiálov</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Wartości</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Lista wyróżnionych</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Materiały</a>
+            </div>
+            <div class="mob-nav-item">
+                <a href="#">Regulamin</a>
+            </div>
+            <div class="mob-nav-btn">
+                <a href="#">zgłoś sIę</a>
+            </div>
+        </div>
+    </div>
+</div>

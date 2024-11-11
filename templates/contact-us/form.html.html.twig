@@ -1,0 +1,23 @@
+
+
+
+<div class="form-container">
+    <p class="highlight">Twoja firma istnieje co najmniej 5 lat na rynku?<br><span
+                class="font-w-700 color-black">Możesz dołączyć do
+                    projektu!</span></p>
+
+    {{ form_start(form, { 'attr': {
+        'class': 'contact-us__form',
+        'method': 'POST',
+    }}) }}
+    {{ form_row(form.companyName) }}
+    {{ form_row(form.phone) }}
+    {{ form_row(form.submit, { 'label': 'Wyślij' }) }}
+    {{ form_end(form) }}
+
+
+    <div class="security-info">
+        <img src="{{ asset('img/security.png') }}" alt="Security Icon">
+        <p>Strona jest zabezpieczona certyfikatem bezpieczeństwa a połączenie jest szyfrowane.</p>
+    </div>
+</div>
